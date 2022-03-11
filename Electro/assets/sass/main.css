@@ -1,5 +1,6 @@
 body {
   height: 400vh;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -753,11 +754,11 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   height: 100%;
 }
 
-#featured {
+#shoplistBannerfirst {
   margin-top: 50px;
 }
 
-#featured .bannerforFatured {
+#shoplistBannerfirst .bannerforFatured {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -766,7 +767,7 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
           justify-content: flex-end;
 }
 
-#featured .bannerforFatured .productsBy .productsCat {
+#shoplistBannerfirst .bannerforFatured .productsBy .productsCat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,7 +782,38 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   border-bottom: 1px solid #eaebec;
 }
 
-#featured .bannerforFatured .productsBy .productsCat ul {
+#shoplistBannerfirst .bannerforFatured .productsBy .productsCat .active2 li p {
+  font-weight: 500;
+}
+
+#shoplistBannerfirst .bannerforFatured .productsBy .productsCat .active2 li p:before {
+  content: "";
+  position: absolute;
+  background-color: #fed700;
+  border-radius: 50%;
+  height: 5px;
+  width: 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  bottom: -10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#shoplistBannerfirst .bannerforFatured .productsBy .productsCat .active2 li p:after {
+  content: "";
+  position: absolute;
+  background-color: #fed700;
+  height: 2px;
+  bottom: -7px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  left: 0;
+  width: 100%;
+}
+
+#shoplistBannerfirst .bannerforFatured .productsBy .productsCat ul {
   padding: 0;
   margin-bottom: 5px;
   display: -webkit-box;
@@ -789,21 +821,23 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   display: flex;
 }
 
-#featured .bannerforFatured .productsBy .productsCat ul li {
+#shoplistBannerfirst .bannerforFatured .productsBy .productsCat ul li {
   list-style: none;
   margin: 0 15px;
   position: relative;
+  cursor: pointer;
 }
 
-#featured .bannerforFatured .productsBy .productsCat ul li a {
+#shoplistBannerfirst .bannerforFatured .productsBy .productsCat ul li p {
   color: #333e48;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   width: 100%;
+  margin-bottom: 0px !important;
 }
 
-#featured .bannerforFatured .productsBy .productsCat ul li a:before {
+#shoplistBannerfirst .bannerforFatured .productsBy .productsCat ul li p:before {
   content: "";
   position: absolute;
   background-color: #fed700;
@@ -818,7 +852,7 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: 0.3s;
 }
 
-#featured .bannerforFatured .productsBy .productsCat ul li a:after {
+#shoplistBannerfirst .bannerforFatured .productsBy .productsCat ul li p:after {
   content: "";
   position: absolute;
   background-color: #fed700;
@@ -830,22 +864,31 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: 0.3s;
 }
 
-#featured .bannerforFatured .productsBy .productsCat ul li a:hover:after {
+#shoplistBannerfirst .bannerforFatured .productsBy .productsCat ul li p:hover:after {
   left: 0;
   width: 100%;
 }
 
-#featured .bannerforFatured .productsBy .productsCat ul li a:hover::before {
+#shoplistBannerfirst .bannerforFatured .productsBy .productsCat ul li p:hover::before {
   width: 10px;
 }
 
-#featured .content .featured {
+#shoplistBannerfirst .content {
+  position: relative;
+}
+
+#shoplistBannerfirst .content .all {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.4s ease-in;
+  transition: visibility 0s, opacity 0.4s ease-in;
 }
 
-#featured .content .featured .special-productByCat {
+#shoplistBannerfirst .content .all .special-productByCat {
   border: 2px solid #fed700;
   border-radius: 20px;
   position: relative;
@@ -853,7 +896,7 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   bottom: 30px;
 }
 
-#featured .content .featured .special-productByCat .announceSp {
+#shoplistBannerfirst .content .all .special-productByCat .announceSp {
   top: 20px;
   left: 20px;
   position: absolute;
@@ -863,7 +906,7 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   color: #333e48;
 }
 
-#featured .content .featured .special-productByCat .discountSp {
+#shoplistBannerfirst .content .all .special-productByCat .discountSp {
   width: 72px;
   height: 72px;
   top: 20px;
@@ -878,14 +921,14 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   border-radius: 50%;
 }
 
-#featured .content .featured .special-productByCat .discountSp .discountPercent {
+#shoplistBannerfirst .content .all .special-productByCat .discountSp .discountPercent {
   font-size: 22px;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: #333e48;
 }
 
-#featured .content .featured .special-productByCat .productImage {
+#shoplistBannerfirst .content .all .special-productByCat .productImage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -894,26 +937,31 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
           justify-content: center;
 }
 
-#featured .content .featured .special-productByCat .productImage .specialOfferImage {
+#shoplistBannerfirst .content .all .special-productByCat .productImage .specialOfferImage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 400px;
+  height: 366px;
 }
 
-#featured .content .featured .special-productByCat .productImage .specialOfferImage img {
+#shoplistBannerfirst .content .all .special-productByCat .productImage .specialOfferImage img {
   max-width: 100%;
+  height: 100%;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc {
   margin: 0 20px;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .productName a {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .productName a {
   text-decoration: none;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .productName a .spProductName {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .productName a .spProductName {
   color: #0062bd;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -923,23 +971,23 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: 0.3s;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .productName a .spProductName:hover {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .productName a .spProductName:hover {
   color: #fed700;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .productPrice .spProductCurrentPrice {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .productPrice .spProductCurrentPrice {
   color: #ee0000;
   font-size: 30px;
   text-align: center;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .productPrice .spProductCurrentPrice .oldPrice {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .productPrice .spProductCurrentPrice .oldPrice {
   font-size: 20px;
   text-decoration: line-through;
   color: #848484;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .stockCondition .stockCount {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .stockCondition .stockCount {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -949,24 +997,24 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   color: #333e48;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .stockCondition .stockCount p {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .stockCondition .stockCount p {
   font-family: "Roboto", sans-serif;
   display: inline-block;
   font-size: 15px;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .stockCondition .stockCount p span {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .stockCondition .stockCount p span {
   color: black !important;
   font-weight: bold;
   font-size: 15px;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .progress-bar {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .progress-bar {
   max-width: 100%;
   border-radius: 20px;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .progress-bar .skillbar {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .progress-bar .skillbar {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -974,7 +1022,7 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   height: 20px;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .progress-bar .skillbar .skillbar-bar {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .progress-bar .skillbar .skillbar-bar {
   border-radius: 20px;
   margin: 0px;
   position: absolute;
@@ -985,12 +1033,12 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   display: inline-block;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .dealEnd .description p {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .dealEnd .description p {
   margin: 12px 0px;
   text-align: center;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .dealEnd .realtime {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .dealEnd .realtime {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -999,16 +1047,16 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
           justify-content: center;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .dealEnd .realtime p {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .dealEnd .realtime p {
   color: #333e48;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .dealEnd .realtime .time {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .dealEnd .realtime .time {
   margin: 6px;
   text-align: center;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .dealEnd .realtime .endTime {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .dealEnd .realtime .endTime {
   padding: 0px 10px;
   background-color: #e6e6e6;
   border-radius: 10px;
@@ -1016,15 +1064,15 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   margin-bottom: 5px;
 }
 
-#featured .content .featured .special-productByCat .bottomSpProduc .dealEnd .realtime .unit {
+#shoplistBannerfirst .content .all .special-productByCat .bottomSpProduc .dealEnd .realtime .unit {
   text-transform: uppercase;
   font-size: 13px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
-#featured .content .featured .productsByCat .byCat {
-  margin: 0 20px !important;
+#shoplistBannerfirst .content .all .productsByCat .byCat {
+  margin: 0 16px !important;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1033,15 +1081,16 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
       flex-wrap: wrap;
 }
 
-#featured .content .featured .productsByCat .byCat .product {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product {
   position: relative;
   margin-top: 5px;
+  width: calc(100% / 4) !important;
   border-radius: 5px;
   -webkit-transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-#featured .content .featured .productsByCat .byCat .product:after {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product:after {
   content: "";
   background: #e6e6e6;
   position: absolute;
@@ -1052,18 +1101,18 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   z-index: -1;
 }
 
-#featured .content .featured .productsByCat .byCat .product:first-child:after {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product:first-child:after {
   display: none;
 }
 
-#featured .content .featured .productsByCat .byCat .product:hover {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
           box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-#featured .content .featured .productsByCat .byCat .product:hover .productButton {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product:hover .productButton {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 1;
@@ -1072,20 +1121,20 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   z-index: 20;
 }
 
-#featured .content .featured .productsByCat .byCat .product:hover .productContent .bottomProduct .contforBotPr {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product:hover .productContent .bottomProduct .contforBotPr {
   border-bottom: 1px solid #e6e6e6;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent {
   position: relative;
   margin: 20px 20px 2px 20px;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .topProduct .brandName {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .topProduct .brandName {
   margin-bottom: 0px;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .topProduct .brandName a {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .topProduct .brandName a {
   display: block;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1099,15 +1148,15 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: all 0.2s ease-in-out;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .topProduct .brandName a:hover {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .topProduct .brandName a:hover {
   color: #fed700;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .topProduct .productName {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .topProduct .productName {
   margin-bottom: 0px;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .topProduct .productName a {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .topProduct .productName a {
   display: block;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1121,11 +1170,11 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: all 0.2s ease-in-out;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .topProduct .productName a:hover {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .topProduct .productName a:hover {
   color: #fed700;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .productImage {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .productImage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1134,18 +1183,20 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
           justify-content: center;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .productImage .image {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .productImage .image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 210px;
+  height: 100%;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .productImage .image img {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .productImage .image img {
   max-width: 100%;
+  max-height: 161px;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .bottomProduct {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .bottomProduct {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1155,7 +1206,7 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   margin-top: 8px;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1171,14 +1222,14 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   margin-bottom: 4px;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .productPrice .CurrentPrice {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .productPrice .CurrentPrice {
   color: #ee0000;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   margin-bottom: 0px;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .productPrice .CurrentPrice .oldPrice {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .productPrice .CurrentPrice .oldPrice {
   color: #848484;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
@@ -1187,7 +1238,7 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   margin-left: 5px;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .selectOption {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .selectOption {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -1205,15 +1256,15 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: all 0.3s ease-in;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .selectOption:hover {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .selectOption:hover {
   background-color: #fed700;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .selectOption svg {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .selectOption svg {
   fill: white;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productButton {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productButton {
   width: 100%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -1241,11 +1292,11 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
           transform: translateY(20px) !important;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productButton .productBtnEl {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productButton .productBtnEl {
   margin: 0 5px;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productButton .quickView {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productButton .quickView {
   color: #848484;
   font-weight: 300;
   font-size: 14px;
@@ -1254,23 +1305,23 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: all 0.2s ease-in;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productButton .quickView:hover {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productButton .quickView:hover {
   color: #fed700;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productButton .quickView:hover svg {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productButton .quickView:hover svg {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   fill: #fed700;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productButton .quickView svg {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productButton .quickView svg {
   fill: #848484;
   position: relative;
   bottom: 1px;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productButton .whishlist a {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productButton .whishlist a {
   text-decoration: none;
   color: #848484;
   font-weight: 300;
@@ -1285,13 +1336,18 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: all 0.2s ease-in;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productButton .whishlist a:hover {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productButton .whishlist a:hover {
   color: #fed700;
 }
 
-#featured .content .featured .productsByCat .byCat .product .productButton .whishlist a i {
+#shoplistBannerfirst .content .all .productsByCat .byCat .product .productButton .whishlist a i {
   font-size: 13px !important;
   margin-right: 5px;
+}
+
+.myclassTest {
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 @media (max-width: 1400px) {

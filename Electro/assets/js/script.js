@@ -17,4 +17,35 @@ $(document).ready(function () {
       dots: true,
     });
   });
+
+  //shoplist firstBanner tabs
+  let category = document.querySelectorAll(
+    "#shoplistBannerfirst .productsCat .category"
+  );
+  let catContent = document.querySelectorAll(
+    "#shoplistBannerfirst .content .all"
+  );
+  console.log(catContent);
+
+  for (let i = 0; i < category.length; i++) {
+    category[i].addEventListener(
+      "click",
+      filterContents.bind(this, category[i])
+    );
+  }
+
+  function filterContents(item) {
+    changeActive(item);
+    for (let i = 0; i < catContent.length; i++) {
+      if (catContent[i].classList.contains(item.attributes.id.value)) {
+        catContent[i].classList.add("myclassTest");
+      } else catContent[i].classList.remove("myclassTest");
+    }
+  }
+  function changeActive(activeitem) {
+    for (let i = 0; i < category.length; i++) {
+      category[i].classList.remove("active2");
+    }
+    activeitem.classList.add("active2");
+  }
 });
