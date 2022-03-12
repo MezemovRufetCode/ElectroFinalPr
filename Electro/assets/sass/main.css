@@ -2401,11 +2401,6 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: 0.3s;
 }
 
-#shoplistBannerfourth .productSlider .owl-carousel:hover .owl-nav {
-  visibility: visible;
-  opacity: 1;
-}
-
 #shoplistBannerfourth .productSlider .owl-carousel .owl-dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2515,6 +2510,9 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-left: 0px;
@@ -2522,11 +2520,12 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
 
 #shoplistBannerfifth .content .main-list .specialProductImage {
   width: 100%;
+  height: 100%;
 }
 
 #shoplistBannerfifth .content .main-list .specialProductImage img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  margin-left: 20px;
+  max-width: 100%;
 }
 
 #shoplistBannerfifth .content .main-list li {
@@ -2569,7 +2568,6 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
 #shoplistBannerfifth .content .main-list li ul {
   margin-top: 25px;
   padding-left: 0px;
-  padding-right: 40px;
 }
 
 #shoplistBannerfifth .content .main-list li ul li {
@@ -2700,6 +2698,206 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   font-weight: 400;
   text-decoration: line-through;
   margin-left: 5px;
+}
+
+#partnerBrands {
+  margin: 40px 0px;
+}
+
+#partnerBrands .brandsSlider {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0px;
+}
+
+#partnerBrands .brandsSlider .brand-wrapper .sliderImg {
+  width: 100% !important;
+  padding: 5px 25px;
+}
+
+#partnerBrands .owl-carousel {
+  position: relative;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#partnerBrands .owl-carousel .owl-nav {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 9999;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0px !important;
+}
+
+#partnerBrands .owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: 0px;
+  background-color: transparent;
+}
+
+#partnerBrands .owl-carousel .owl-nav .owl-prev .fa-chevron-left {
+  color: #848484;
+}
+
+#partnerBrands .owl-carousel .owl-nav .owl-prev .fa-chevron-left:hover {
+  color: #333e48;
+}
+
+#partnerBrands .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: 0px;
+  background-color: transparent;
+}
+
+#partnerBrands .owl-carousel .owl-nav .owl-next .fa-chevron-right {
+  color: #848484;
+}
+
+#partnerBrands .owl-carousel .owl-nav .owl-next .fa-chevron-right:hover {
+  color: #333e48;
+}
+
+#subscribe .container {
+  background-color: #fed700;
+  border-radius: 15px;
+}
+
+#subscribe .container .subscribeWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 20px;
+}
+
+#subscribe .container .subscribeWrapper .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#subscribe .container .subscribeWrapper .description svg {
+  margin-right: 8px;
+  height: 30px;
+  width: 30px;
+}
+
+#subscribe .container .subscribeWrapper .description p {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  margin-bottom: 0px;
+  color: #333e48;
+}
+
+#subscribe .container .subscribeWrapper .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#subscribe .container .subscribeWrapper .info p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0px;
+  color: #333e48;
+  font-weight: 400;
+}
+
+#subscribe .container .subscribeWrapper .info p span {
+  font-weight: 500;
+}
+
+#subscribe .container .subscribeWrapper .subsribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#subscribe .container .subscribeWrapper .subsribe form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+  width: 100%;
+}
+
+#subscribe .container .subscribeWrapper .subsribe .inputEmail {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  position: relative;
+  background-color: white;
+}
+
+#subscribe .container .subscribeWrapper .subsribe .inputEmail input {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  outline: none;
+  border: none;
+  padding: 9px 0px 9px 30px;
+  width: 100%;
+}
+
+#subscribe .container .subscribeWrapper .subsribe .inputSubmit {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#subscribe .container .subscribeWrapper .subsribe .inputSubmit input {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 9px 0px;
+  background-color: #333e48;
+  width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#subscribe .container .subscribeWrapper .subsribe .inputSubmit input:hover {
+  background-color: black;
 }
 
 footer {
@@ -2844,6 +3042,7 @@ footer .rightside .footerList .listItem .subList li a:hover {
 
 @media (max-width: 1450px) {
   #shoplistBannerfifth .productImage .image {
+    max-width: 100%;
     width: 70px !important;
   }
 }
@@ -2874,8 +3073,24 @@ footer .rightside .footerList .listItem .subList li a:hover {
   header .nav .container .row .categories .Menu .mega-menu {
     left: 216px;
   }
+  #shoplistBannerfourth .product {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  #shoplistBannerfourth .product .contforBotPr {
+    border: none !important;
+  }
+  #shoplistBannerfourth .product .productButton {
+    display: none !important;
+  }
   #shoplistBannerfifth .productImage .image {
     width: 60px !important;
+  }
+  #subscribe .info {
+    display: none !important;
+  }
+  #subscribe .inputEmail input {
+    padding: 9px 0px 9px 15px !important;
   }
 }
 
@@ -2897,6 +3112,9 @@ footer .rightside .footerList .listItem .subList li a:hover {
   #shoplistBannerfifth .productImage .image {
     width: 90px !important;
   }
+  #partnerBrands .brand-wrapper .sliderImg {
+    padding: 5px 20px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2911,6 +3129,15 @@ footer .rightside .footerList .listItem .subList li a:hover {
   }
   #shoplistBannerfirst .content .special-productByCat {
     margin-top: 45px;
+  }
+  #partnerBrands .brand-wrapper .sliderImg {
+    padding: 5px 10px !important;
+  }
+  #subscribe .subscribeWrapper .subsribe {
+    margin-top: 12px;
+  }
+  #subscribe .subscribeWrapper .subsribe form {
+    padding: 0px !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

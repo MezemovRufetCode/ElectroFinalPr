@@ -7,6 +7,8 @@ $(document).ready(function () {
   //--------Category menu open close ending-------
 
   // -----------------Starting Owl Carousel--------
+
+  //-----Intro slider--------
   $(document).ready(function () {
     $("#Intro .owl-carousel").owlCarousel({
       items: 1,
@@ -19,10 +21,11 @@ $(document).ready(function () {
       dots: true,
     });
   });
+  // -------Intro slider Ending--------
 
+  // ----------Fourth Banner Slider Starting--------
   $(document).ready(function () {
     $("#shoplistBannerfourth .owl-carousel").owlCarousel({
-      items: 6,
       nav: true,
       navText: [
         "<i class='fa-solid fa-chevron-left'></i>",
@@ -33,24 +36,49 @@ $(document).ready(function () {
       responsive: {
         0: {
           items: 2,
-          nav: true,
         },
         768: {
           items: 4,
-          nav: true,
         },
         992: {
           items: 6,
-          nav: false,
         },
         1200: {
           items: 6,
-          nav: true,
-          loop: false,
         },
       },
     });
   });
+  // ----------Fourth Banner Slider Ending--------
+
+  // ----------Parners Banner Slider Starting--------
+  $(document).ready(function () {
+    $("#partnerBrands .owl-carousel").owlCarousel({
+      items: 6,
+      dots: false,
+      nav: true,
+      loop: true,
+      navText: [
+        "<i class='fa-solid fa-chevron-left'></i>",
+        "<i class='fa-solid fa-chevron-right'></i>",
+      ],
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 5,
+        },
+        992: {
+          items: 5,
+        },
+        1200: {
+          items: 6,
+        },
+      },
+    });
+    $("#partnerBrands .owl-carousel .owl-nav").classList.remove("disabled");
+  });
+  // ----------Parners Banner Slider Ending--------
+
   //-----------Ending owl Caorousel-------------
 
   //--------------Starting Shoplist FirstBanner Tab

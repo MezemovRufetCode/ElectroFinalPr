@@ -1947,12 +1947,6 @@ header {
       position: relative;
       height: 100%;
       transition: 0.3s;
-      &:hover {
-        .owl-nav {
-          visibility: visible;
-          opacity: 1;
-        }
-      }
       .owl-dots {
         display: flex;
         position: absolute;
@@ -2051,12 +2045,15 @@ header {
     flex-wrap: wrap;
     .main-list {
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
       padding-left: 0px;
       .specialProductImage {
         width: 100%;
+        height: 100%;
         img {
-          object-fit: cover;
+          margin-left: 20px;
+          max-width: 100%;
         }
       }
       li {
@@ -2091,7 +2088,7 @@ header {
         ul {
           margin-top: 25px;
           padding-left: 0px;
-          padding-right: 40px;
+
           li {
             list-style: none;
           }
@@ -2179,6 +2176,146 @@ header {
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#partnerBrands {
+  margin: 40px 0px;
+  .brandsSlider {
+    border-top: 1px solid $background-color-Light;
+    border-bottom: 1px solid $background-color-Light;
+    padding: 0px;
+    .brand-wrapper {
+      .sliderImg {
+        width: 100% !important;
+        padding: 5px 25px;
+      }
+    }
+  }
+  .owl-carousel {
+    position: relative;
+    height: 100%;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    .owl-nav {
+      position: absolute;
+      transform: translateY(-50%);
+      z-index: 9999;
+      //default olaraq disabled verir,owl carousel bugudu...
+      display: flex !important;
+      align-items: center;
+      width: 100%;
+      margin: 0px !important;
+      .owl-prev {
+        position: absolute;
+        left: 0px;
+        background-color: transparent;
+        .fa-chevron-left {
+          &:hover {
+            color: $background-color-Dark;
+          }
+          color: $light-font-color;
+        }
+      }
+      .owl-next {
+        position: absolute;
+        right: 0px;
+        background-color: transparent;
+        .fa-chevron-right {
+          color: $light-font-color;
+          &:hover {
+            color: $background-color-Dark;
+          }
+        }
+      }
+    }
+  }
+}
+#subscribe {
+  .container {
+    background-color: $main-color;
+    border-radius: 15px;
+    .subscribeWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      .description {
+        display: flex;
+        align-items: center;
+        svg {
+          margin-right: 8px;
+          height: 30px;
+          width: 30px;
+        }
+        p {
+          font-family: $main-font;
+          font-size: 22px;
+          margin-bottom: 0px;
+          color: $background-color-Dark;
+        }
+      }
+      .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          font-family: $main-font;
+          margin-bottom: 0px;
+          color: $background-color-Dark;
+          font-weight: 400;
+          span {
+            font-weight: 500;
+          }
+        }
+      }
+      .subsribe {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        form {
+          display: flex;
+          padding: 0 20px;
+          width: 100%;
+        }
+        .inputEmail {
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+          position: relative;
+          background-color: white;
+
+          input {
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            outline: none;
+            border: none;
+            padding: 9px 0px 9px 30px;
+            width: 100%;
+          }
+        }
+        .inputSubmit {
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px;
+          display: flex;
+          justify-content: center;
+          input {
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            outline: none;
+            border: none;
+            color: white;
+            padding: 9px 0px;
+            background-color: $background-color-Dark;
+            width: 100%;
+            transition: 0.2s;
+            &:hover {
+              background-color: black;
             }
           }
         }
@@ -2299,12 +2436,11 @@ footer {
     }
   }
 }
-@media (min-width: 1400px) {
-}
 @media (max-width: 1450px) {
   #shoplistBannerfifth {
     .productImage {
       .image {
+        max-width: 100%;
         width: 70px !important;
       }
     }
@@ -2358,10 +2494,31 @@ footer {
       }
     }
   }
+  #shoplistBannerfourth {
+    .product {
+      box-shadow: none !important;
+      .contforBotPr {
+        border: none !important;
+      }
+      .productButton {
+        display: none !important;
+      }
+    }
+  }
   #shoplistBannerfifth {
     .productImage {
       .image {
         width: 60px !important;
+      }
+    }
+  }
+  #subscribe {
+    .info {
+      display: none !important;
+    }
+    .inputEmail {
+      input {
+        padding: 9px 0px 9px 15px !important;
       }
     }
   }
@@ -2398,6 +2555,13 @@ footer {
       }
     }
   }
+  #partnerBrands {
+    .brand-wrapper {
+      .sliderImg {
+        padding: 5px 20px !important;
+      }
+    }
+  }
 }
 @media (max-width: 768px) {
   #shoplistBannerfirst {
@@ -2416,4 +2580,23 @@ footer {
       }
     }
   }
+  #partnerBrands {
+    .brand-wrapper {
+      .sliderImg {
+        padding: 5px 10px !important;
+      }
+    }
+  }
+  #subscribe {
+    .subscribeWrapper {
+      .subsribe {
+        margin-top: 12px;
+        form {
+          padding: 0px !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
 }
