@@ -603,6 +603,7 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+  z-index: -10;
 }
 
 #Intro .IntroSlider .owl-carousel {
@@ -713,6 +714,401 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   -webkit-transition: opacity 300ms ease;
   transition: opacity 300ms ease;
   border-radius: 30px;
+}
+
+#Intro .owl-stage .active .slproductInfo1 .desc .fdesc {
+  opacity: 0;
+  -webkit-animation-name: opacityAnimation;
+          animation-name: opacityAnimation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#Intro .owl-stage .active .slproductInfo1 .desc .sdesc {
+  left: 400%;
+  -webkit-animation-name: righttoleft;
+          animation-name: righttoleft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.45s;
+          animation-delay: 1.45s;
+}
+
+#Intro .owl-stage .active .slproductInfo1 .desc .price {
+  opacity: 0;
+  -webkit-animation-name: opacityAnimation;
+          animation-name: opacityAnimation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.35s;
+          animation-delay: 2.35s;
+}
+
+#Intro .owl-stage .active .slproductInfo2 .desc .fdesc {
+  opacity: 0;
+  -webkit-animation-name: opacityAnimation;
+          animation-name: opacityAnimation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#Intro .owl-stage .active .slproductInfo2 .desc .sdesc {
+  right: 400%;
+  -webkit-animation-name: lefttoright;
+          animation-name: lefttoright;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.45s;
+          animation-delay: 1.45s;
+}
+
+#Intro .owl-stage .active .slproductInfo3 .desc .fdesc {
+  opacity: 0;
+  -webkit-animation-name: opacityAnimation;
+          animation-name: opacityAnimation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#Intro .owl-stage .active .slproductInfo3 .desc .sdesc {
+  left: 400%;
+  -webkit-animation-name: righttoleft;
+          animation-name: righttoleft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.45s;
+          animation-delay: 1.45s;
+}
+
+#Intro .owl-stage .active .slproductInfo3 .desc .price {
+  right: 400%;
+  -webkit-animation-name: lefttoright;
+          animation-name: lefttoright;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.35s;
+          animation-delay: 2.35s;
+}
+
+#Intro .owl-stage .active .slproductImg1 {
+  opacity: 0;
+  -webkit-animation-name: opacityAnimation;
+          animation-name: opacityAnimation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#Intro .owl-stage .active .slproductImg2 {
+  -webkit-animation-name: introSliderBannerImg;
+          animation-name: introSliderBannerImg;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+#Intro .owl-stage .active .slproductImg3 {
+  opacity: 0;
+  -webkit-animation-name: opacityAnimation;
+          animation-name: opacityAnimation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#Intro .owl-stage .active .buyBtn {
+  bottom: 0px;
+  left: 400%;
+  -webkit-animation-name: righttoleft;
+          animation-name: righttoleft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+#Intro .sliderBanner .slproductInfo1 {
+  z-index: 1;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 40%;
+  left: 45%;
+}
+
+#Intro .sliderBanner .slproductInfo1 .desc .fdesc {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 5px;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #333e48;
+}
+
+#Intro .sliderBanner .slproductInfo1 .desc .sdesc {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333e48;
+  margin-bottom: 0px;
+  bottom: 0px;
+  position: relative;
+}
+
+#Intro .sliderBanner .slproductInfo1 .desc .price {
+  font-family: "Open Sans", sans-serif;
+  color: #333e48;
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  line-height: 55px;
+}
+
+#Intro .sliderBanner .slproductInfo1 .desc .price span {
+  position: relative;
+  bottom: 20px;
+  font-size: 38px;
+}
+
+#Intro .sliderBanner .slproductInfo2 {
+  z-index: 1;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 35%;
+  left: 50%;
+}
+
+#Intro .sliderBanner .slproductInfo2 .desc .fdesc {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #34bcec;
+}
+
+#Intro .sliderBanner .slproductInfo2 .desc .sdesc {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #333e48;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#Intro .sliderBanner .slproductInfo2 .desc .sdesc span {
+  font-weight: 500;
+}
+
+#Intro .sliderBanner .slproductInfo3 {
+  z-index: 1;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 40%;
+  left: 45%;
+}
+
+#Intro .sliderBanner .slproductInfo3 .desc .fdesc {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 5px;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #333e48;
+}
+
+#Intro .sliderBanner .slproductInfo3 .desc .sdesc {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333e48;
+  margin-bottom: 0px;
+  bottom: 0px;
+  position: relative;
+}
+
+#Intro .sliderBanner .slproductInfo3 .desc .price {
+  font-family: "Open Sans", sans-serif;
+  color: #333e48;
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  line-height: 55px;
+  position: relative;
+}
+
+#Intro .sliderBanner .slproductInfo3 .desc .price span {
+  position: relative;
+  bottom: 20px;
+  font-size: 38px;
+}
+
+#Intro .sliderBanner .buyBtn {
+  position: relative;
+  outline: none;
+  border: none;
+  white-space: nowrap;
+  background-color: #fed700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 10px 50px;
+  border-radius: 10px;
+  color: #333e48;
+  -webkit-transition: 0.25s ease-in;
+  transition: 0.25s ease-in;
+  bottom: 0px;
+}
+
+#Intro .sliderBanner .buyBtn:hover {
+  color: white;
+  background-color: #333e48;
+}
+
+#Intro .sliderBanner .slproductImg1 {
+  position: absolute;
+  top: 0px;
+  right: 2%;
+  z-index: 0;
+  height: 100%;
+}
+
+#Intro .sliderBanner .slproductImg1 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#Intro .sliderBanner .slproductImg2 {
+  position: absolute;
+  top: 0px;
+  right: 2%;
+  z-index: 0;
+  height: 100%;
+}
+
+#Intro .sliderBanner .slproductImg2 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#Intro .sliderBanner .slproductImg3 {
+  position: absolute;
+  top: 0px;
+  right: 2%;
+  z-index: 0;
+  height: 100%;
+}
+
+#Intro .sliderBanner .slproductImg3 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@-webkit-keyframes introSliderBannerImg {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 2%;
+  }
+}
+
+@keyframes introSliderBannerImg {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 2%;
+  }
+}
+
+@-webkit-keyframes righttoleft {
+  0% {
+    left: 400%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes righttoleft {
+  0% {
+    left: 400%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@-webkit-keyframes lefttoright {
+  0% {
+    right: 400%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+@keyframes lefttoright {
+  0% {
+    right: 400%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+@-webkit-keyframes opacityAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #intro-banner {
@@ -1456,54 +1852,65 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
 #shoplistBannersecond .content .contenybyCat .all {
   position: relative;
   display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .productWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
   margin-top: 5px;
-  margin-right: 2px;
-  margin-left: 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: calc(100% - 5px) !important;
+}
+
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product {
   position: relative;
-  right: 2px;
-  background-color: white;
+  padding: 2px;
+  width: 98%;
   border-radius: 5px;
   -webkit-transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  overflow: hidden;
+  background-color: white;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper:hover {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product:first-child:after {
+  display: none;
+}
+
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
           box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper:hover .productButton {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product:hover .productButton {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 1;
   -webkit-transform: translateY(0) !important;
           transform: translateY(0) !important;
-  z-index: 6110;
+  z-index: 20;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .containerforSp {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product:hover .productContent .bottomProduct .contforBotPr {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent {
   position: relative;
   margin: 20px 20px 2px 20px;
-  height: 100%;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .topProduct .brandName {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .topProduct .brandName {
   margin-bottom: 0px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .topProduct .brandName a {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .topProduct .brandName a {
   display: block;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1517,15 +1924,15 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: all 0.2s ease-in-out;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .topProduct .brandName a:hover {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .topProduct .brandName a:hover {
   color: #fed700;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .topProduct .productName {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .topProduct .productName {
   margin-bottom: 0px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .topProduct .productName a {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .topProduct .productName a {
   display: block;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1539,65 +1946,34 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: all 0.2s ease-in-out;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .topProduct .productName a:hover {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .topProduct .productName a:hover {
   color: #fed700;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .discountSp {
-  width: 72px;
-  height: 72px;
-  top: 20px;
-  right: 20px;
-  position: absolute;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  text-align: center;
-  padding: 10px;
-  background-color: #fed700;
-  border-radius: 50%;
-}
-
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .discountSp .discountPercent {
-  font-size: 22px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  color: #333e48;
-}
-
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .primagewrapper {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .productImage .image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .productImage .specialOfferImage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 400px;
-  height: 366px;
-}
-
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .productImage .specialOfferImage img {
-  max-width: 100%;
+  max-width: 700px;
   height: 100%;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .productImage .productOtherImages {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .productImage .image img {
+  max-width: 100%;
+  max-height: 700px !important;
+}
+
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .productImage .productOtherImages {
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .productImage .productOtherImages img {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .productImage .productOtherImages img {
   border: 1px solid #e6e6e6;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1606,11 +1982,11 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   margin-right: 5px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .productImage .productOtherImages img:last-child {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .productImage .productOtherImages img:last-child {
   margin-right: 0px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .bottomProduct {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .bottomProduct {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1620,7 +1996,7 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   margin-top: 8px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .bottomProduct .contforBotPr {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .bottomProduct .contforBotPr {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1636,14 +2012,14 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   margin-bottom: 4px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .bottomProduct .contforBotPr .productPrice .CurrentPrice {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .bottomProduct .contforBotPr .productPrice .CurrentPrice {
   color: #ee0000;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   margin-bottom: 0px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .bottomProduct .contforBotPr .productPrice .CurrentPrice .oldPrice {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .bottomProduct .contforBotPr .productPrice .CurrentPrice .oldPrice {
   color: #848484;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
@@ -1652,15 +2028,11 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   margin-left: 5px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .bottomProduct .contforBotPr a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .bottomProduct .contforBotPr .selectOption {
-  border-radius: 16px;
-  background-color: #fed700;
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .bottomProduct .contforBotPr .selectOption {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #e6e6e6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1672,29 +2044,27 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
           align-items: center;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  padding: 4px 15px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .bottomProduct .contforBotPr .selectOption:hover {
-  background-color: #333e48;
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .bottomProduct .contforBotPr .selectOption:hover {
+  background-color: #fed700;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .bottomProduct .contforBotPr .selectOption svg {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .bottomProduct .contforBotPr .selectOption svg {
   fill: white;
 }
 
 #shoplistBannersecond .content .contenybyCat .all .spProductWrapper .productButton {
   width: 100%;
-  margin-bottom: 30px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.2) 0px 1px 3px -1px;
-          box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.2) 0px 1px 3px -1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 5px 0px 10px 0px;
   background-color: white !important;
   text-align: center;
   position: absolute;
-  bottom: -40px;
+  bottom: -32px;
   z-index: 100;
   left: 0px;
   right: 0px;
@@ -1765,7 +2135,7 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   margin-right: 5px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1773,14 +2143,17 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
       flex-wrap: wrap;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .productWrapper {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .productWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 5px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product {
   position: relative;
   padding: 2px;
   width: 98%;
@@ -1790,18 +2163,18 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   background-color: white;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product:first-child:after {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product:first-child:after {
   display: none;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product:hover {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
           box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product:hover .productButton {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product:hover .productButton {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 1;
@@ -1810,20 +2183,20 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   z-index: 20;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product:hover .productContent .bottomProduct .contforBotPr {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product:hover .productContent .bottomProduct .contforBotPr {
   border-bottom: 1px solid #e6e6e6;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent {
   position: relative;
   margin: 20px 20px 2px 20px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .topProduct .brandName {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .topProduct .brandName {
   margin-bottom: 0px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .topProduct .brandName a {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .topProduct .brandName a {
   display: block;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1837,15 +2210,15 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: all 0.2s ease-in-out;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .topProduct .brandName a:hover {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .topProduct .brandName a:hover {
   color: #fed700;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .topProduct .productName {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .topProduct .productName {
   margin-bottom: 0px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .topProduct .productName a {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .topProduct .productName a {
   display: block;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1859,11 +2232,11 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: all 0.2s ease-in-out;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .topProduct .productName a:hover {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .topProduct .productName a:hover {
   color: #fed700;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .productImage {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .productImage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1872,7 +2245,7 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
           justify-content: center;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .productImage .image {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .productImage .image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1880,12 +2253,12 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   height: 100%;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .productImage .image img {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .productImage .image img {
   max-width: 100%;
   max-height: 157px !important;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .bottomProduct {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .bottomProduct {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1895,7 +2268,7 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   margin-top: 8px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1911,14 +2284,14 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   margin-bottom: 4px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .productPrice .CurrentPrice {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .productPrice .CurrentPrice {
   color: #ee0000;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   margin-bottom: 0px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .productPrice .CurrentPrice .oldPrice {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .productPrice .CurrentPrice .oldPrice {
   color: #848484;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
@@ -1927,7 +2300,7 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   margin-left: 5px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .selectOption {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .selectOption {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -1945,15 +2318,15 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: all 0.3s ease-in;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .selectOption:hover {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .selectOption:hover {
   background-color: #fed700;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .selectOption svg {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .bottomProduct .contforBotPr .selectOption svg {
   fill: white;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productButton {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productButton {
   width: 100%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -1981,11 +2354,11 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
           transform: translateY(20px) !important;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productButton .productBtnEl {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productButton .productBtnEl {
   margin: 0 5px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productButton .quickView {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productButton .quickView {
   color: #848484;
   font-weight: 300;
   font-size: 14px;
@@ -1994,23 +2367,23 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: all 0.2s ease-in;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productButton .quickView:hover {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productButton .quickView:hover {
   color: #fed700;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productButton .quickView:hover svg {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productButton .quickView:hover svg {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   fill: #fed700;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productButton .quickView svg {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productButton .quickView svg {
   fill: #848484;
   position: relative;
   bottom: 1px;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productButton .whishlist a {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productButton .whishlist a {
   text-decoration: none;
   color: #848484;
   font-weight: 300;
@@ -2025,16 +2398,16 @@ header .nav .nav-links .Menu ul li .mega-menu-column-4 ul li {
   transition: all 0.2s ease-in;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productButton .whishlist a:hover {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productButton .whishlist a:hover {
   color: #fed700;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .productsByCat .byCat .product .productButton .whishlist a i {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productButton .whishlist a i {
   font-size: 13px !important;
   margin-right: 5px;
 }
 
-#shoplistBannersecond .content .activeB2Content {
+#shoplistBannersecond .activeB2Content {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
