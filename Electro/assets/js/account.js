@@ -121,7 +121,6 @@ $(document).ready(function () {
   let catContent2 = document.querySelectorAll(
     "#shoplistBannersecond .content .all"
   );
-  console.log(catContent2);
 
   for (let i = 0; i < category2.length; i++) {
     category2[i].addEventListener(
@@ -153,7 +152,6 @@ $(document).ready(function () {
   let catContent3 = document.querySelectorAll(
     "#shoplistBannerthird .content .all"
   );
-  console.log(catContent3);
 
   for (let i = 0; i < category3.length; i++) {
     category3[i].addEventListener(
