@@ -19,7 +19,6 @@ $(document).ready(function () {
       $head.removeClass("fixed");
     }
   });
-  console.log(".bottomheader");
   //------Ending Header Position Fixed---
 
   //-----Intro slider--------
@@ -51,7 +50,7 @@ $(document).ready(function () {
         0: {
           items: 1,
         },
-        550: {
+        500: {
           items: 2,
         },
         768: {
@@ -92,7 +91,7 @@ $(document).ready(function () {
         },
       },
     });
-    $("#partnerBrands .owl-carousel .owl-nav").classList.remove("disabled");
+    // $("#partnerBrands .owl-carousel .owl-nav").classList.remove("disabled");
   });
   // ----------Partners Banner Slider Ending--------
   //-----------Ending owl Caorousel-------------

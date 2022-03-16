@@ -32,38 +32,34 @@ $(document).ready(function () {
   var productWrapper = document.querySelectorAll(
     ".productlistpageRightside .productWrapper"
   );
+  var productImageLooking1 = document.querySelectorAll(
+    ".productlistpageRightside .productContent .productImagefirst"
+  );
+
+  var productImageLooking2 = document.querySelectorAll(
+    ".productlistpageRightside .productContent .productImagesecond"
+  );
   $("#productlistPage .settingsforProducts .lookingProducts span").click(
     function () {
       var text = $(this).attr("data-grid");
       if (text == "grid-4") {
         for (i = 0; i <= productWrapper.length; i++) {
-          productWrapper[i].classList.remove("col-lg-4");
-          productWrapper[i].classList.remove("col-lg-12");
-          productWrapper[i].classList.remove("listmode");
-          productWrapper[i].classList.add("col-lg-3");
+          productWrapper[i].className = "col-lg-3 productWrapper";
         }
       }
       if (text == "grid-3") {
         for (i = 0; i <= productWrapper.length; i++) {
-          productWrapper[i].classList.remove("col-lg-12");
-          productWrapper[i].classList.remove("col-lg-3");
-          productWrapper[i].classList.remove("listmode");
-          productWrapper[i].classList.add("col-lg-4");
+          productWrapper[i].className = "col-lg-4 productWrapper";
         }
       }
       if (text == "grid-2") {
         for (i = 0; i <= productWrapper.length; i++) {
-          productWrapper[i].classList.remove("col-lg-3");
-          productWrapper[i].classList.remove("col-lg-4");
-          productWrapper[i].classList.add("col-lg-12");
-          productWrapper[i].classList.add("listmode");
+          productWrapper[i].className = "listmode col-lg-12 productWrapper";
         }
       }
       if (text == "grid-1") {
         for (i = 0; i <= productWrapper.length; i++) {
-          productWrapper[i].classList.remove("col-lg-3");
-          productWrapper[i].classList.remove("col-lg-4");
-          productWrapper[i].classList.add("col-lg-12 listmode");
+          productWrapper[i].className = "listmode col-lg-12 productWrapper";
         }
       }
     }

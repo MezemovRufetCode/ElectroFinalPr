@@ -1465,7 +1465,7 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
 }
 
 #intro-banner {
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 #intro-banner .banners {
@@ -1655,6 +1655,7 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   color: #333e48;
+  z-index: 1;
 }
 
 #shoplistBannerfirst .content .contenybyCat .all .special-productByCat .discountSp {
@@ -1670,6 +1671,7 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
   padding: 10px;
   background-color: #fed700;
   border-radius: 50%;
+  z-index: 1;
 }
 
 #shoplistBannerfirst .content .contenybyCat .all .special-productByCat .discountSp .discountPercent {
@@ -1680,6 +1682,7 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
 }
 
 #shoplistBannerfirst .content .contenybyCat .all .special-productByCat .productImage {
+  z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1689,19 +1692,22 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
 }
 
 #shoplistBannerfirst .content .contenybyCat .all .special-productByCat .productImage .specialOfferImage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 400px;
-  height: 366px;
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 10px;
 }
 
 #shoplistBannerfirst .content .contenybyCat .all .special-productByCat .productImage .specialOfferImage img {
+  position: relative;
+  left: 0;
+  top: 0;
   max-width: 100%;
+  max-height: 100%;
+  width: 100%;
   height: 100%;
+  margin: 0 auto;
 }
 
 #shoplistBannerfirst .content .contenybyCat .all .special-productByCat .bottomSpProduc {
@@ -1946,19 +1952,40 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
 }
 
 #shoplistBannerfirst .content .contenybyCat .all .productsByCat .byCat .product .productContent .productImage .image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 210px;
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 10px;
+}
+
+#shoplistBannerfirst .content .contenybyCat .all .productsByCat .byCat .product .productContent .productImage .image a:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  content: "";
+  height: 0%;
+  width: 100%;
+  z-index: 15;
+  -webkit-transition: all 0.35s ease-in-out 0s;
+  transition: all 0.35s ease-in-out 0s;
+}
+
+#shoplistBannerfirst .content .contenybyCat .all .productsByCat .byCat .product .productContent .productImage .image a:hover:before {
   height: 100%;
 }
 
-#shoplistBannerfirst .content .contenybyCat .all .productsByCat .byCat .product .productContent .productImage .image img {
+#shoplistBannerfirst .content .contenybyCat .all .productsByCat .byCat .product .productContent .productImage .image a img {
+  position: relative;
+  left: 0;
+  top: 0;
   max-width: 100%;
-  max-height: 161px;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 #shoplistBannerfirst .content .contenybyCat .all .productsByCat .byCat .product .productContent .bottomProduct {
@@ -2209,6 +2236,29 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
       flex-wrap: wrap;
 }
 
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .discountSp {
+  width: 72px;
+  height: 72px;
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+  background-color: #fed700;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .discountSp .discountPercent {
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #333e48;
+}
+
 #shoplistBannersecond .content .contenybyCat .all .spProductWrapper .productWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2223,7 +2273,7 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
 #shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product {
   position: relative;
   padding: 2px;
-  width: 98%;
+  width: 99%;
   border-radius: 5px;
   -webkit-transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -2304,19 +2354,40 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
 }
 
 #shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .productImage .image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 700px;
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 10px;
+}
+
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .productImage .image a:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  content: "";
+  height: 0%;
+  width: 100%;
+  z-index: 15;
+  -webkit-transition: all 0.35s ease-in-out 0s;
+  transition: all 0.35s ease-in-out 0s;
+}
+
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .productImage .image a:hover:before {
   height: 100%;
 }
 
-#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .productImage .image img {
+#shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .productImage .image a img {
+  position: relative;
+  left: 0;
+  top: 0;
   max-width: 100%;
-  max-height: 700px !important;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 #shoplistBannersecond .content .contenybyCat .all .spProductWrapper .product .productContent .productImage .productOtherImages {
@@ -2603,16 +2674,40 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
 }
 
 #shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .productImage .image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 210px;
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 10px;
+}
+
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .productImage .image a:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  content: "";
+  height: 0%;
+  width: 100%;
+  z-index: 15;
+  -webkit-transition: all 0.35s ease-in-out 0s;
+  transition: all 0.35s ease-in-out 0s;
+}
+
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .productImage .image a:hover:before {
   height: 100%;
 }
 
-#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .productImage .image img {
+#shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .productImage .image a img {
+  position: relative;
+  left: 0;
+  top: 0;
   max-width: 100%;
-  max-height: 157px !important;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 #shoplistBannersecond .content .contenybyCat .productsByCat .byCat .product .productContent .bottomProduct {
@@ -3017,16 +3112,40 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
 }
 
 #shoplistBannerthird .content .contenybyCat .all .productsByCat .product .productContent .productImage .image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 210px;
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 10px;
+}
+
+#shoplistBannerthird .content .contenybyCat .all .productsByCat .product .productContent .productImage .image a:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  content: "";
+  height: 0%;
+  width: 100%;
+  z-index: 15;
+  -webkit-transition: all 0.35s ease-in-out 0s;
+  transition: all 0.35s ease-in-out 0s;
+}
+
+#shoplistBannerthird .content .contenybyCat .all .productsByCat .product .productContent .productImage .image a:hover:before {
   height: 100%;
 }
 
-#shoplistBannerthird .content .contenybyCat .all .productsByCat .product .productContent .productImage .image img {
+#shoplistBannerthird .content .contenybyCat .all .productsByCat .product .productContent .productImage .image a img {
+  position: relative;
+  left: 0;
+  top: 0;
   max-width: 100%;
-  max-height: 157px !important;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 #shoplistBannerthird .content .contenybyCat .all .productsByCat .product .productContent .bottomProduct {
@@ -3412,19 +3531,40 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
 }
 
 #shoplistBannerfourth .content .contenybyCat .all .productsByCat .product .productContent .productImage .image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 210px;
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 10px;
+}
+
+#shoplistBannerfourth .content .contenybyCat .all .productsByCat .product .productContent .productImage .image a:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  content: "";
+  height: 0%;
+  width: 100%;
+  z-index: 15;
+  -webkit-transition: all 0.35s ease-in-out 0s;
+  transition: all 0.35s ease-in-out 0s;
+}
+
+#shoplistBannerfourth .content .contenybyCat .all .productsByCat .product .productContent .productImage .image a:hover:before {
   height: 100%;
 }
 
-#shoplistBannerfourth .content .contenybyCat .all .productsByCat .product .productContent .productImage .image img {
+#shoplistBannerfourth .content .contenybyCat .all .productsByCat .product .productContent .productImage .image a img {
+  position: relative;
+  left: 0;
+  top: 0;
   max-width: 100%;
-  max-height: 157px !important;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 #shoplistBannerfourth .content .contenybyCat .all .productsByCat .product .productContent .bottomProduct {
@@ -3707,13 +3847,22 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
 }
 
 #shoplistBannerfifth .content .main-list .specialProductImage {
+  display: block;
+  position: relative;
+  text-align: center;
   width: 100%;
-  height: 100%;
+  margin: 0 auto 10px;
 }
 
 #shoplistBannerfifth .content .main-list .specialProductImage img {
-  margin-left: 20px;
+  position: relative;
+  left: 0;
+  top: 0;
   max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 #shoplistBannerfifth .content .main-list li {
@@ -3810,7 +3959,7 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
   margin-right: 20px;
 }
 
-#shoplistBannerfifth .content .main-list .productWrapper .product .productContent .productImage .image img {
+#shoplistBannerfifth .content .main-list .productWrapper .product .productContent .productImage .image a img {
   max-width: 100%;
   max-height: 157px !important;
 }
@@ -4300,13 +4449,22 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
 }
 
 #accountPage #shoplistBannerfifth .content .main-list .specialProductImage {
+  display: block;
+  position: relative;
+  text-align: center;
   width: 100%;
-  height: 100%;
+  margin: 0 auto 10px;
 }
 
 #accountPage #shoplistBannerfifth .content .main-list .specialProductImage img {
-  margin-left: 20px;
+  position: relative;
+  left: 0;
+  top: 0;
   max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 #accountPage #shoplistBannerfifth .content .main-list li {
@@ -4403,7 +4561,7 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
   margin-right: 20px;
 }
 
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .productImage .image img {
+#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .productImage .image a img {
   max-width: 100%;
   max-height: 157px !important;
 }
@@ -4426,10 +4584,6 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
 }
 
 #accountPage #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .textInfo .topProduct .productName a {
-  display: block;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -4919,6 +5073,7 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
 }
 
 #productlistPage .productlistpageRightside .settingsforProducts .sortByProduct .sortingFilter .sortList {
+  background-color: white;
   margin-top: 9px;
   position: absolute;
   border-top: 2px solid #fed700;
@@ -4930,6 +5085,7 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
   visibility: hidden;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+  z-index: 9999;
 }
 
 #productlistPage .productlistpageRightside .settingsforProducts .sortByProduct .sortingFilter .sortList .sortlistItem {
@@ -4939,6 +5095,10 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
   font-size: 13px;
   color: #333e48;
   font-weight: 400;
+}
+
+#productlistPage .productlistpageRightside .settingsforProducts .sortByProduct .sortingFilter .sortList .sortlistItem:hover {
+  background-color: #f5f5f5;
 }
 
 #productlistPage .productlistpageRightside .settingsforProducts .sortByProduct .sortingFilter .sortList .activefilterItem {
@@ -4956,6 +5116,10 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
 
 #productlistPage .productlistpageRightside .settingsforProducts .rightside p {
   margin-bottom: 0px;
+}
+
+#productlistPage .productlistpageRightside .productsection {
+  z-index: 0;
 }
 
 #productlistPage .zerodeg {
@@ -5004,6 +5168,7 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
   display: flex;
   margin-top: 5px;
   margin-bottom: 50px;
+  z-index: 0;
 }
 
 #productlistPage .content .contenybyCat .productsByCat .productWrapper .product {
@@ -5258,7 +5423,25 @@ header .nav .nav-links .Menu ul .megalistCont .list-itemMenuCont .list-itemMenu 
   margin: 0 auto 10px;
 }
 
-#productlistPage .content .productImage .image img {
+#productlistPage .content .productImage .image a:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  content: "";
+  height: 0%;
+  width: 100%;
+  z-index: 15;
+  -webkit-transition: all 0.35s ease-in-out 0s;
+  transition: all 0.35s ease-in-out 0s;
+}
+
+#productlistPage .content .productImage .image a:hover:before {
+  height: 100%;
+}
+
+#productlistPage .content .productImage .image a img {
   position: relative;
   left: 0;
   top: 0;
