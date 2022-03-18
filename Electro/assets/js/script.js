@@ -26,6 +26,23 @@ $(document).ready(function () {
   });
   // ----ending sidebar open close--
 
+  //Starting Sidebar Nav
+
+  $(".sidebar .mobile-touch-submenu").hide();
+  $(".sidebar .mobile-touch-submenu2").hide();
+
+  $(".menulistname").click(function () {
+    $(this).find(".fa-chevron-right").toggleClass("ndeg udeg");
+    $(this).next(".mobile-touch-submenu").slideToggle(200);
+  });
+
+  $(".menulistname2").click(function () {
+    $(this).find(".fa-chevron-right").toggleClass("ndeg udeg");
+    $(this).next(".mobile-touch-submenu2").slideToggle(200);
+  });
+
+  //Ending Sidebar Nav
+
   // ---Starting Shopping card open close
   $("#myheader .bottomheadTools .basketOpenClose").click(function () {
     $("#myheader .bottomheadTools .shoppingCard").toggleClass(
@@ -65,6 +82,23 @@ $(document).ready(function () {
         "<i class='fa-solid fa-chevron-right'></i>",
       ],
       dots: true,
+      responsive: {
+        0: {
+          nav: false,
+        },
+        500: {
+          nav: false,
+        },
+        768: {
+          nav: true,
+        },
+        992: {
+          nav: true,
+        },
+        1200: {
+          nav: true,
+        },
+      },
     });
   });
   // -------Intro slider Ending--------
