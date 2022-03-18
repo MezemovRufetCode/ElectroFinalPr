@@ -6,10 +6,43 @@ $(document).ready(function () {
   });
   //--------Category menu open close ending-------
 
+  // -----Sidebar open close----
+  $("#myheader .bottomheader .responsive-menu").click(function (e) {
+    e.stopPropagation();
+    $(".sidebar").toggleClass("active-mobile-menu");
+  });
+
+  $("body").click(function (e) {
+    if ($(".sidebar").hasClass("active-mobile-menu")) {
+      $(".sidebar").toggleClass("active-mobile-menu");
+    }
+  });
+  $(".sidebar").click(function (e) {
+    e.stopPropagation();
+  });
+  $(window).scroll(function () {
+    var windowHeight = $(window).height();
+    $(".sidebar").css("height", windowHeight);
+  });
+  // ----ending sidebar open close--
+
+  // ---Starting Shopping card open close
+  $("#myheader .bottomheadTools .basketOpenClose").click(function () {
+    $("#myheader .bottomheadTools .shoppingCard").toggleClass(
+      "activeShoppingcart"
+    );
+    if ($(window).width() < 993) {
+      $(this).attr("href", "#");
+    }
+    // else {
+    //   $(this).attr("href","#");
+    // }
+  });
+
+  // -----Ending Shopping card------
+
   // -----------------Starting Owl Carousel--------
-
   //------Starting Header Position Fixed----------
-
   $(window).scroll(function () {
     var $this = $(this),
       $head = $("#myheader .bottomheader");
@@ -94,6 +127,7 @@ $(document).ready(function () {
     // $("#partnerBrands .owl-carousel .owl-nav").classList.remove("disabled");
   });
   // ----------Partners Banner Slider Ending--------
+
   //-----------Ending owl Caorousel-------------
 
   //--------------Starting Shoplist FirstBanner Tab
@@ -141,7 +175,6 @@ $(document).ready(function () {
       filterContents2.bind(this, category2[i])
     );
   }
-
   function filterContents2(item2) {
     changeActive2(item2);
     for (let i = 0; i < catContent2.length; i++) {
@@ -157,6 +190,7 @@ $(document).ready(function () {
     activeitem2.classList.add("activeB2catName");
   }
   //--------------Ending Shoplist SecondBanner Tab
+
   //--------------Starting Shoplist Third Tab
   $(document).ready(function () {});
   let category3 = document.querySelectorAll(
@@ -165,14 +199,12 @@ $(document).ready(function () {
   let catContent3 = document.querySelectorAll(
     "#shoplistBannerthird .content .all"
   );
-
   for (let i = 0; i < category3.length; i++) {
     category3[i].addEventListener(
       "click",
       filterContents3.bind(this, category3[i])
     );
   }
-
   function filterContents3(item3) {
     changeActive3(item3);
     for (let i = 0; i < catContent3.length; i++) {
@@ -187,9 +219,9 @@ $(document).ready(function () {
     }
     activeitem3.classList.add("activeB3catName");
   }
+  //--------------Ending Shoplist Third Tab
 
   // Two row owl carosuel Banner Third Starting
-
   $(document).ready(function () {
     var el = $("#shoplistBannerthird .activeB3Content .owl-carousel");
 
@@ -348,6 +380,5 @@ $(document).ready(function () {
     //init
     carousel = el.owlCarousel(carouselOptions);
   });
-  // ----Banner Third Ending
   //--------------Ending Shoplist ThirdBanner Tab
 });
