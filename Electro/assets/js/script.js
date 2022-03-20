@@ -255,6 +255,35 @@ $(document).ready(function () {
   }
   //--------------Ending Shoplist Third Tab
 
+  // -------Product Details Page Full details Tab-----
+  $(document).ready(function () {});
+  let category4 = document.querySelectorAll(
+    "#detailspage .productsCat .category"
+  );
+  let catContent4 = document.querySelectorAll("#detailspage .content .all");
+  for (let i = 0; i < category4.length; i++) {
+    category4[i].addEventListener(
+      "click",
+      filterContents4.bind(this, category4[i])
+    );
+  }
+  function filterContents4(item4) {
+    changeActive4(item4);
+    for (let i = 0; i < catContent4.length; i++) {
+      if (catContent4[i].classList.contains(item4.attributes.id.value)) {
+        catContent4[i].classList.add("activeDetailsContent");
+      } else catContent4[i].classList.remove("activeDetailsContent");
+    }
+  }
+  function changeActive4(activeitem4) {
+    for (let i = 0; i < category4.length; i++) {
+      category4[i].classList.remove("activeDetailsCatName");
+    }
+    activeitem4.classList.add("activeDetailsCatName");
+  }
+
+  // -----Ending Full Details Tab --------
+
   // Two row owl carosuel Banner Third Starting
   $(document).ready(function () {
     var el = $("#shoplistBannerthird .activeB3Content .owl-carousel");
@@ -415,4 +444,49 @@ $(document).ready(function () {
     carousel = el.owlCarousel(carouselOptions);
   });
   //--------------Ending Shoplist ThirdBanner Tab
+
+  //Product Details Page js
+  //Details image slider
+  $(document).ready(function () {
+    $("#detailspage .owl-carousel").owlCarousel({
+      items: 1,
+      dots: false,
+      nav: true,
+      loop: true,
+      navText: [
+        "<i class='fa-solid fa-chevron-left'></i>",
+        "<i class='fa-solid fa-chevron-right'></i>",
+      ],
+    });
+  });
+
+  //Details Page Quantity
+  $(document).ready(function () {
+    //quantity2
+    var valueCount;
+    document
+      .querySelector(".quantity2 .qty-down2")
+      .setAttribute("disabled", "disabled");
+    document
+      .querySelector(".quantity2 .qty-up2")
+      .addEventListener("click", function () {
+        valueCount = document.getElementById("quantity2").value;
+        valueCount++;
+        document.getElementById("quantity2").value = valueCount;
+        if (valueCount > 1) {
+          document.querySelector(".qty-down2").removeAttribute("disabled");
+          document.querySelector(".qty-down2").classList.remove("disabled");
+        }
+      });
+    document.querySelector(".qty-down2").addEventListener("click", function () {
+      valueCount = document.getElementById("quantity2").value;
+      valueCount--;
+      document.getElementById("quantity2").value = valueCount;
+      if (valueCount == 1) {
+        document
+          .querySelector(".qty-down2")
+          .setAttribute("disabled", "disabled");
+      }
+    });
+  });
 });
