@@ -5,7 +5,6 @@ $(document).ready(function () {
     $(".categories .Menu").toggleClass("deactive");
   });
   //--------Category menu open close ending-------
-
   // -----Sidebar open close----
   $("#myheader .bottomheader .responsive-menu").click(function (e) {
     e.stopPropagation();
@@ -25,6 +24,12 @@ $(document).ready(function () {
     $(".sidebar").css("height", windowHeight);
   });
   // ----ending sidebar open close--
+
+  //Starting mobil search input
+  $("#myheader .bottomheader .bottomheadTools .search").click(function () {
+    $(".mobilesearch").toggleClass("mobilesearchActive");
+  });
+  // ----ending mobil search input--
 
   //Starting Sidebar Nav
 
@@ -54,6 +59,10 @@ $(document).ready(function () {
     // else {
     //   $(this).attr("href","#");
     // }
+  });
+  //  Language panel
+  $("#myheader .topheadElements .language").click(function () {
+    $("#myheader .topheadElements .languageCard").toggleClass("langactive");
   });
 
   // -----Ending Shopping card------
@@ -489,4 +498,20 @@ $(document).ready(function () {
       }
     });
   });
+  // --Ending quantity-
+  // Starting go to top
+  //To top
+  $(".goUp").hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 400) {
+      $(".goUp").show(200);
+    } else {
+      $(".goUp").hide(100);
+    }
+  });
+  $(".goUp").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 50);
+    return false;
+  });
+  // Ending go to top
 });
