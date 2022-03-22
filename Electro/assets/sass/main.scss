@@ -4809,7 +4809,9 @@ header {
             margin-top: 5px;
             margin-bottom: 50px;
             z-index: 0;
+
             .product {
+              display: flex;
               width: 99%;
               position: relative;
               border-radius: 5px;
@@ -4987,6 +4989,92 @@ header {
                   }
                 }
               }
+            }
+            .specifications {
+              display: none;
+              margin-left: 30px;
+              width: 100%;
+              .brandName {
+                margin-bottom: 0px;
+                a {
+                  display: block;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  text-decoration: none;
+                  font-family: $main-font;
+                  font-size: 13px;
+                  font-weight: 300;
+                  color: $light-font-color;
+                  transition: all 0.2s ease-in-out;
+                  &:hover {
+                    color: $main-color;
+                  }
+                }
+              }
+              .productName {
+                margin-bottom: 0px;
+                a {
+                  display: block;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  text-decoration: none;
+                  font-family: $main-font;
+                  font-size: 15px;
+                  font-weight: 600;
+                  color: $products-name-color;
+                  transition: all 0.2s ease-in-out;
+                  &:hover {
+                    color: $main-color;
+                  }
+                }
+              }
+              .specy {
+                margin-top: 15px;
+                li {
+                  font-family: $secondary-font;
+                  font-size: 14px;
+                  color: $light-font-color;
+                  font-weight: 400;
+                }
+              }
+              .wrapperbuyinh {
+                margin-left: 20px;
+                .price {
+                  color: $main-text-color;
+                  font-family: $secondary-font;
+                  font-size: 22px;
+                  margin-bottom: 25px;
+                }
+                .selectop {
+                  padding: 15px 50px;
+                  background-color: $main-color;
+                  text-decoration: none;
+                  color: white;
+                  border-radius: 25px;
+                }
+              }
+            }
+          }
+          .mod3 {
+            .product {
+              .specifications {
+                display: flex !important;
+              }
+              .topProduct {
+                display: none !important;
+              }
+              .bottomProduct {
+                display: none !important;
+              }
+              .productButton {
+                display: none !important;
+              }
+              &:hover {
+                box-shadow: none !important;
+              }
+              border-bottom: 1px solid $secondary-border-color;
             }
           }
         }

@@ -5960,6 +5960,9 @@ header .activeShoppingcart {
 }
 
 #productlistPage #productList .content .contenybyCat .productsByCat .productWrapper .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 99%;
   position: relative;
   border-radius: 5px;
@@ -6192,6 +6195,113 @@ header .activeShoppingcart {
 #productlistPage #productList .content .contenybyCat .productsByCat .productWrapper .product .productButton .whishlist a i {
   font-size: 13px !important;
   margin-right: 5px;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .productWrapper .specifications {
+  display: none;
+  margin-left: 30px;
+  width: 100%;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .productWrapper .specifications .brandName {
+  margin-bottom: 0px;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .productWrapper .specifications .brandName a {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: #848484;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .productWrapper .specifications .brandName a:hover {
+  color: #fed700;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .productWrapper .specifications .productName {
+  margin-bottom: 0px;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .productWrapper .specifications .productName a {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0062bd;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .productWrapper .specifications .productName a:hover {
+  color: #fed700;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .productWrapper .specifications .specy {
+  margin-top: 15px;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .productWrapper .specifications .specy li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #848484;
+  font-weight: 400;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .productWrapper .specifications .wrapperbuyinh {
+  margin-left: 20px;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .productWrapper .specifications .wrapperbuyinh .price {
+  color: #333e48;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .productWrapper .specifications .wrapperbuyinh .selectop {
+  padding: 15px 50px;
+  background-color: #fed700;
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .mod3 .product {
+  border-bottom: 1px solid #dddddd;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .mod3 .product .specifications {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .mod3 .product .topProduct {
+  display: none !important;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .mod3 .product .bottomProduct {
+  display: none !important;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .mod3 .product .productButton {
+  display: none !important;
+}
+
+#productlistPage #productList .content .contenybyCat .productsByCat .mod3 .product:hover {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 #productlistPage #productList .content .productImage {

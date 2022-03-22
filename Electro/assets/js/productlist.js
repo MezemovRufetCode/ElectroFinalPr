@@ -32,12 +32,8 @@ $(document).ready(function () {
   var productWrapper = document.querySelectorAll(
     ".productlistpageRightside .productWrapper"
   );
-  var productImageLooking1 = document.querySelectorAll(
-    ".productlistpageRightside .productContent .productImagefirst"
-  );
-
-  var productImageLooking2 = document.querySelectorAll(
-    ".productlistpageRightside .productContent .productImagesecond"
+  var product = document.querySelectorAll(
+    ".productlistpageRightside .productWrapper .product"
   );
   $("#productlistPage .settingsforProducts .lookingProducts span").click(
     function () {
@@ -57,15 +53,15 @@ $(document).ready(function () {
       if (text == "grid-2") {
         for (i = 0; i <= productWrapper.length; i++) {
           productWrapper[i].className =
-            "listmode col-lg-12 col-md-12 col-sm-12 productWrapper";
+            "listmode col-lg-12 col-md-12 col-sm-12 productWrapper mod3";
         }
       }
-      if (text == "grid-1") {
-        for (i = 0; i <= productWrapper.length; i++) {
-          productWrapper[i].className =
-            "listmode col-lg-12 col-md-12 col-sm-12 productWrapper";
-        }
-      }
+      // if (text == "grid-1") {
+      //   for (i = 0; i <= productWrapper.length; i++) {
+      //     productWrapper[i].className =
+      //       "listmode col-lg-12 col-md-12 col-sm-12 productWrapper";
+      //   }
+      // }
     }
   );
 
