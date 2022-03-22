@@ -7992,6 +7992,155 @@ header .activeShoppingcart {
   margin-right: 5px;
 }
 
+#contactPage #contact {
+  margin-top: 50px;
+}
+
+#contactPage #contact .mycontact {
+  margin-bottom: 20px;
+}
+
+#contactPage #contact .mycontact .contactwrapper {
+  padding-right: 10px;
+}
+
+#contactPage #contact .mycontact .contactwrapper .nameofsec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contactPage #contact .mycontact .contactwrapper .nameofsec .productsBy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-bottom: 1px solid #eaebec;
+  width: 100%;
+  position: relative;
+}
+
+#contactPage #contact .mycontact .contactwrapper .nameofsec .productsBy p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+#contactPage #contact .mycontact .contactwrapper .nameofsec .productsBy p:after {
+  content: "";
+  position: absolute;
+  background-color: #fed700;
+  height: 2px;
+  width: 175px;
+  left: 0px;
+  bottom: -1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#contactPage #contact .mycontact .contactwrapper form .info {
+  margin: 15px 0px;
+}
+
+#contactPage #contact .mycontact .contactwrapper form .info p {
+  margin-bottom: 0px;
+  font-family: "Open Sans", sans-serif;
+  color: #333e48;
+  font-size: 14px;
+}
+
+#contactPage #contact .mycontact .contactwrapper form label {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #333e48;
+  font-size: 14px;
+}
+
+#contactPage #contact .mycontact .contactwrapper form .formelement input {
+  border: 1px solid #dddddd;
+  outline: none;
+  padding: 13px 20px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+#contactPage #contact .mycontact .contactwrapper form .formelement input:focus {
+  border: 1px solid #fed700;
+}
+
+#contactPage #contact .mycontact .contactwrapper form .nameemail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contactPage #contact .mycontact .contactwrapper form .nameemail .name .namewrapper {
+  padding-right: 13px;
+}
+
+#contactPage #contact .mycontact .contactwrapper form .nameemail .email .emailwrapper {
+  padding-left: 13px;
+}
+
+#contactPage #contact .mycontact .contactwrapper form .formelement {
+  margin-bottom: 15px;
+}
+
+#contactPage #contact .mycontact .contactwrapper form .textarea textarea {
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  outline: none;
+  border: 1px solid #dddddd;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  min-height: 120px;
+}
+
+#contactPage #contact .mycontact .contactwrapper form .textarea textarea:focus {
+  border: 1px solid #fed700;
+}
+
+#contactPage #contact .mycontact .contactwrapper form #submitmessage {
+  border: none;
+  outline: none;
+  background-color: #fed700;
+  padding: 12px 60px;
+  border-radius: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  -webkit-transition: 0.225s ease-in-out;
+  transition: 0.225s ease-in-out;
+}
+
+#contactPage #contact .mycontact .contactwrapper form #submitmessage:hover {
+  background-color: #333e48;
+  color: white;
+}
+
+#contactPage #contact .mymap {
+  margin-bottom: 20px;
+}
+
+#contactPage #contact .mymap .mapwrapper {
+  padding-left: 10px;
+}
+
+#contactPage #contact .mymap .mapwrapper iframe {
+  width: 100%;
+  min-height: 450px;
+}
+
 footer {
   background-color: white;
   display: -webkit-box;
@@ -8305,6 +8454,21 @@ footer .rightside .footerList .listItem .subList li a:hover {
     transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -webkit-transform: translateX(-310px);
             transform: translateX(-310px);
+  }
+  #contactPage .nameemail .namewrapper {
+    padding-right: 0px !important;
+  }
+  #contactPage .nameemail .emailwrapper {
+    padding-left: 0px !important;
+  }
+  #contactPage .contactwrapper {
+    padding-right: 0px !important;
+  }
+  #contactPage .mapwrapper {
+    padding-left: 0px !important;
+  }
+  #contactPage .mapwrapper iframe {
+    min-height: 300px !important;
   }
 }
 

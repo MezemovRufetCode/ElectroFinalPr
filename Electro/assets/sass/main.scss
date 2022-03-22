@@ -6486,6 +6486,131 @@ header {
     }
   }
 }
+#contactPage {
+  #contact {
+    margin-top: 50px;
+    .mycontact {
+      margin-bottom: 20px;
+      .contactwrapper {
+        padding-right: 10px;
+        .nameofsec {
+          display: flex;
+          justify-content: center;
+          .productsBy {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            border-bottom: 1px solid $border-main-color;
+            width: 100%;
+            position: relative;
+            p {
+              font-family: $secondary-font;
+              font-size: 22px;
+              margin-bottom: 10px;
+              &:after {
+                content: "";
+                position: absolute;
+                background-color: $main-color;
+                height: 2px;
+                width: 175px;
+                left: 0px;
+                bottom: -1px;
+                transition: 0.3s;
+              }
+            }
+          }
+        }
+        form {
+          .info {
+            margin: 15px 0px;
+            p {
+              margin-bottom: 0px;
+              font-family: $secondary-font;
+              color: $main-text-color;
+              font-size: 14px;
+            }
+          }
+          label {
+            font-family: $secondary-font;
+            font-weight: 700;
+            color: $main-text-color;
+            font-size: 14px;
+          }
+          .formelement {
+            input {
+              border: 1px solid $secondary-border-color;
+              outline: none;
+              padding: 13px 20px;
+              width: 100%;
+              border-radius: 25px;
+              &:focus {
+                border: 1px solid $main-color;
+              }
+            }
+          }
+          .nameemail {
+            display: flex;
+            flex-wrap: wrap;
+            .name {
+              .namewrapper {
+                padding-right: 13px;
+              }
+            }
+            .email {
+              .emailwrapper {
+                padding-left: 13px;
+              }
+            }
+          }
+          .formelement {
+            margin-bottom: 15px;
+          }
+          .textarea {
+            textarea {
+              width: 100%;
+              border-radius: 20px;
+              padding: 20px;
+              outline: none;
+              border: 1px solid $secondary-border-color;
+              font-size: 14px;
+              font-family: $secondary-font;
+              min-height: 120px;
+              &:focus {
+                border: 1px solid $main-color;
+              }
+            }
+          }
+          #submitmessage {
+            border: none;
+            outline: none;
+            background-color: $main-color;
+            padding: 12px 60px;
+            border-radius: 25px;
+            font-family: $secondary-font;
+            font-weight: 600;
+            transition: 0.225s ease-in-out;
+            &:hover {
+              background-color: $background-color-Dark;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+    .mymap {
+      margin-bottom: 20px;
+      .mapwrapper {
+        padding-left: 10px;
+
+        iframe {
+          width: 100%;
+          min-height: 450px;
+        }
+      }
+    }
+  }
+}
 
 footer {
   background-color: white;
@@ -6850,6 +6975,25 @@ footer {
       background-color: white;
       transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       transform: translateX(-310px);
+    }
+  }
+  #contactPage {
+    .nameemail {
+      .namewrapper {
+        padding-right: 0px !important;
+      }
+      .emailwrapper {
+        padding-left: 0px !important;
+      }
+    }
+    .contactwrapper {
+      padding-right: 0px !important;
+    }
+    .mapwrapper {
+      padding-left: 0px !important;
+      iframe {
+        min-height: 300px !important;
+      }
     }
   }
 }
