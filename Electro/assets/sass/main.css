@@ -178,7 +178,7 @@ header .bottomheader {
   position: -webkit-sticky;
   top: 0;
   width: 100%;
-  z-index: 99999;
+  z-index: 999;
 }
 
 header .bottomheader .pc-deparment {
@@ -6875,6 +6875,7 @@ header .activeShoppingcart {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 99999999999;
 }
 
 #detailspage .productdetails .productcontent-wrapper .left .imagewrapper img {
@@ -6890,13 +6891,25 @@ header .activeShoppingcart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  text-align: center;
   width: 100%;
+  margin: 0 auto 10px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-#detailspage .productdetails .productcontent-wrapper .left .imagewrapper .img-display .img-showcase img {
-  max-width: 100%;
+#detailspage .productdetails .productcontent-wrapper .left .imagewrapper .img-display .img-showcase a {
+  min-width: 100%;
+}
+
+#detailspage .productdetails .productcontent-wrapper .left .imagewrapper .img-display .img-showcase a img {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 #detailspage .productdetails .productcontent-wrapper .left .imagewrapper .img-select {

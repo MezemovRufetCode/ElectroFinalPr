@@ -156,7 +156,7 @@ header {
     position: -webkit-sticky;
     top: 0;
     width: 100%;
-    z-index: 99999;
+    z-index: 999;
     .pc-deparment {
       height: 100px;
       display: flex;
@@ -5572,6 +5572,7 @@ header {
           // padding: 0 15px;
           display: flex;
           justify-content: center;
+          z-index: 99999999999;
           img {
             width: 100%;
             display: block;
@@ -5580,10 +5581,21 @@ header {
             overflow: hidden;
             .img-showcase {
               display: flex;
+              position: relative;
+              text-align: center;
               width: 100%;
+              margin: 0 auto 10px;
               transition: all 0.3s ease;
-              img {
-                max-width: 100%;
+              a {
+                min-width: 100%;
+                img {
+                  position: relative;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  margin: 0 auto;
+                }
               }
             }
           }
