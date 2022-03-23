@@ -6856,6 +6856,10 @@ header .activeShoppingcart {
   margin-top: 50px;
 }
 
+#detailspage .productdetails {
+  margin-bottom: 60px;
+}
+
 #detailspage .productdetails .productcontent-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6864,65 +6868,62 @@ header .activeShoppingcart {
       flex-wrap: wrap;
 }
 
-#detailspage .productdetails .productcontent-wrapper .left .productimage {
-  padding: 0 15px;
+#detailspage .productdetails .productcontent-wrapper .left .imagewrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#detailspage .productdetails .productcontent-wrapper .left .productimage .slick-slide {
+#detailspage .productdetails .productcontent-wrapper .left .imagewrapper img {
+  width: 100%;
   display: block;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto 10px;
 }
 
-#detailspage .productdetails .productcontent-wrapper .left .productimage .slick-slide img {
-  position: relative;
-  left: 0;
-  top: 0;
+#detailspage .productdetails .productcontent-wrapper .left .imagewrapper .img-display {
+  overflow: hidden;
+}
+
+#detailspage .productdetails .productcontent-wrapper .left .imagewrapper .img-display .img-showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#detailspage .productdetails .productcontent-wrapper .left .imagewrapper .img-display .img-showcase img {
   max-width: 100%;
-  max-height: 100%;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
 }
 
-#detailspage .productdetails .productcontent-wrapper .left .owl-carousel {
-  position: relative;
-  height: 100%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+#detailspage .productdetails .productcontent-wrapper .left .imagewrapper .img-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-#detailspage .productdetails .productcontent-wrapper .left .owl-carousel .owl-nav {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 10;
-  width: 100% !important;
+#detailspage .productdetails .productcontent-wrapper .left .imagewrapper .img-select .img-item {
+  border: 1px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
+  margin-top: 3px;
+  margin-right: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#detailspage .productdetails .productcontent-wrapper .left .owl-carousel .owl-nav .owl-prev {
-  position: absolute;
-  left: 10px;
-  background-color: transparent;
-  color: #848484;
+#detailspage .productdetails .productcontent-wrapper .left .imagewrapper .img-select .img-item:last-child {
+  margin-right: 0px;
 }
 
-#detailspage .productdetails .productcontent-wrapper .left .owl-carousel .owl-nav .owl-prev .fa-chevron-left:hover {
-  color: #fed700;
+#detailspage .productdetails .productcontent-wrapper .left .imagewrapper .img-select .img-item:hover {
+  border-bottom: 2px solid #fed700;
 }
 
-#detailspage .productdetails .productcontent-wrapper .left .owl-carousel .owl-nav .owl-next {
-  position: absolute;
-  right: 10px;
-  background-color: transparent;
-  color: #848484;
-}
-
-#detailspage .productdetails .productcontent-wrapper .left .owl-carousel .owl-nav .owl-next .fa-chevron-left:hover {
-  color: #fed700;
+#detailspage .productdetails .productcontent-wrapper .left .imagewrapper .img-select .active-itemlooking {
+  border-bottom: 2px solid #fed700;
 }
 
 #detailspage .productdetails .productcontent-wrapper .middle .productwrapper {
@@ -6956,6 +6957,12 @@ header .activeShoppingcart {
   font-size: 13px;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
+  -webkit-transition: 0.225s;
+  transition: 0.225s;
+}
+
+#detailspage .productdetails .productcontent-wrapper .middle .productwrapper .product-text-details .topdetails .addreview .toreview:hover {
+  color: #fed700;
 }
 
 #detailspage .productdetails .productcontent-wrapper .middle .productwrapper .product-text-details .topdetails .share {
@@ -8754,6 +8761,9 @@ footer .rightside .footerList .listItem .subList li a:hover {
 @media (min-width: 768px) {
   #shoppingCartPage .cart-table table td {
     padding: 30px 10px !important;
+  }
+  #detailspage .productdetails .left .imagewrapper {
+    padding: 0 15px;
   }
 }
 
