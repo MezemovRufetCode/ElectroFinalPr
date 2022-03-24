@@ -57,4 +57,7 @@ $(document).ready(function () {
   });
 
   // ending product images slider
+  $(".breadcrumb").asBreadcrumbs({
+    namespace: "breadcrumb",
+  });
 });

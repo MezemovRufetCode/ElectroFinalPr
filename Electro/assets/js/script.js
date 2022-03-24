@@ -484,4 +484,12 @@ $(document).ready(function () {
     return false;
   });
   // Ending go to top
+
+  //FAQ page questions
+  $(".FAQ .mylist .questions .answer").hide();
+  $(".Quest").click(function () {
+    $(this).find(".Icon").toggleClass("zerodeg udeg");
+    $(this).next(".answer").slideToggle(200);
+  });
+  // ---Ending FAQ page-------
 });

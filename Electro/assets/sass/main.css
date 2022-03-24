@@ -649,8 +649,8 @@ header .nav .categories .Menu ul li .title a {
 }
 
 header .nav .categories .Menu ul li .mega-menu-column-3 {
-  max-width: 900px;
-  min-width: 900px;
+  max-width: 700px;
+  min-width: 700px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -900,7 +900,7 @@ header .nav .nav-links .Menu ul li .mega-menu {
 }
 
 header .nav .nav-links .Menu ul li .mega-menu-column-4 {
-  max-width: 1000px;
+  max-width: 780px;
   width: 100%;
   left: 62%;
   -webkit-transform: translateX(-50%);
@@ -4605,6 +4605,7 @@ header .activeShoppingcart {
 
 #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .textInfo .topProduct .productName {
   margin-bottom: 0px;
+  line-height: 14px;
 }
 
 #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .textInfo .topProduct .productName a {
@@ -4615,6 +4616,7 @@ header .activeShoppingcart {
   color: #0062bd;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  line-height: 14px;
 }
 
 #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .textInfo .topProduct .productName a:hover {
@@ -5043,427 +5045,6 @@ header .activeShoppingcart {
 
 #accountPage #account .account .loginwrapper .login .content .bottomlogin a:hover {
   color: #fed700;
-}
-
-#accountPage #shoplistBannerfifth {
-  margin-top: 20px;
-  padding-top: 40px;
-  background-color: white;
-}
-
-#accountPage #shoplistBannerfifth .content {
-  position: relative;
-  padding: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-left: 0px;
-  width: 100%;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .specialProductImage {
-  display: block;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto 10px;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .specialProductImage img {
-  position: relative;
-  left: 0;
-  top: 0;
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list li {
-  list-style: none;
-  position: relative;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list li h4 {
-  border-bottom: 1px solid #e6e6e6;
-  padding-bottom: 15px;
-  position: relative;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list li h4:after {
-  content: "";
-  position: absolute;
-  background-color: #fed700;
-  height: 1.8px;
-  width: 80px;
-  left: 0px;
-  top: 43.5px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list li h4 a {
-  text-decoration: none;
-  color: #333e48;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  font-size: 21px;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list li h4 a:hover {
-  color: #fed700;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list li ul {
-  margin-top: 25px;
-  padding-left: 0px;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list li ul li {
-  list-style: none;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 5px;
-  width: 100%;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product {
-  width: 99%;
-  position: relative;
-  border-radius: 5px;
-  -webkit-transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  background-color: white;
-  margin: 8px 0px 8px 0px;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product:first-child {
-  margin-left: 1px !important;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product .productContent {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .productImage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .productImage .image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 90px;
-  height: 100%;
-  margin-right: 20px;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .productImage .image a img {
-  max-width: 100%;
-  max-height: 157px !important;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .textInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .textInfo .topProduct .productName {
-  margin-bottom: 0px;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .textInfo .topProduct .productName a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  color: #0062bd;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .textInfo .topProduct .productName a:hover {
-  color: #fed700;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .textInfo .bottomProduct {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-top: 8px;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .textInfo .bottomProduct .contforBotPr {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .textInfo .bottomProduct .contforBotPr .productPrice .CurrentPrice {
-  color: #333e48;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  margin-bottom: 0px;
-}
-
-#accountPage #shoplistBannerfifth .content .main-list .productWrapper .product .productContent .textInfo .bottomProduct .contforBotPr .productPrice .CurrentPrice .oldPrice {
-  color: #848484;
-  font-family: "Roboto", sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  text-decoration: line-through;
-  margin-left: 5px;
-}
-
-#accountPage #partnerBrands {
-  margin: 40px 0px;
-}
-
-#accountPage #partnerBrands .brandsSlider {
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  padding: 0px;
-}
-
-#accountPage #partnerBrands .brandsSlider .brand-wrapper .sliderImg {
-  width: 100% !important;
-  padding: 5px 25px;
-}
-
-#accountPage #partnerBrands .owl-carousel {
-  position: relative;
-  height: 100%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#accountPage #partnerBrands .owl-carousel .owl-nav {
-  position: absolute;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 9999;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  margin: 0px !important;
-}
-
-#accountPage #partnerBrands .owl-carousel .owl-nav .owl-prev {
-  position: absolute;
-  left: 0px;
-  background-color: transparent;
-}
-
-#accountPage #partnerBrands .owl-carousel .owl-nav .owl-prev .fa-chevron-left {
-  color: #848484;
-}
-
-#accountPage #partnerBrands .owl-carousel .owl-nav .owl-prev .fa-chevron-left:hover {
-  color: #333e48;
-}
-
-#accountPage #partnerBrands .owl-carousel .owl-nav .owl-next {
-  position: absolute;
-  right: 0px;
-  background-color: transparent;
-}
-
-#accountPage #partnerBrands .owl-carousel .owl-nav .owl-next .fa-chevron-right {
-  color: #848484;
-}
-
-#accountPage #partnerBrands .owl-carousel .owl-nav .owl-next .fa-chevron-right:hover {
-  color: #333e48;
-}
-
-#accountPage #subscribe .container {
-  background-color: #fed700;
-  border-radius: 15px;
-}
-
-#accountPage #subscribe .container .row {
-  width: 100% !important;
-}
-
-#accountPage #subscribe .container .subscribeWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 15px 20px;
-}
-
-#accountPage #subscribe .container .subscribeWrapper .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#accountPage #subscribe .container .subscribeWrapper .description svg {
-  margin-right: 8px;
-  height: 30px;
-  width: 30px;
-}
-
-#accountPage #subscribe .container .subscribeWrapper .description p {
-  font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  margin-bottom: 0px;
-  color: #333e48;
-}
-
-#accountPage #subscribe .container .subscribeWrapper .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#accountPage #subscribe .container .subscribeWrapper .info p {
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 0px;
-  color: #333e48;
-  font-weight: 400;
-}
-
-#accountPage #subscribe .container .subscribeWrapper .info p span {
-  font-weight: 500;
-}
-
-#accountPage #subscribe .container .subscribeWrapper .subsribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#accountPage #subscribe .container .subscribeWrapper .subsribe form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0 20px;
-  width: 100%;
-}
-
-#accountPage #subscribe .container .subscribeWrapper .subsribe .inputEmail {
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  position: relative;
-  background-color: white;
-}
-
-#accountPage #subscribe .container .subscribeWrapper .subsribe .inputEmail input {
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  outline: none;
-  border: none;
-  padding: 9px 0px 9px 30px;
-  width: 100%;
-}
-
-#accountPage #subscribe .container .subscribeWrapper .subsribe .inputSubmit {
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#accountPage #subscribe .container .subscribeWrapper .subsribe .inputSubmit input {
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  outline: none;
-  border: none;
-  color: white;
-  padding: 9px 0px;
-  background-color: #333e48;
-  width: 100%;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-#accountPage #subscribe .container .subscribeWrapper .subsribe .inputSubmit input:hover {
-  background-color: black;
 }
 
 #productlistPage #productList {
@@ -8271,6 +7852,74 @@ header .activeShoppingcart {
   min-height: 450px;
 }
 
+#FAQPage #faq .FAQ .headinfo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #333e48;
+  text-align: center;
+  margin: 40px 0px;
+}
+
+#FAQPage #faq .FAQ .mylist {
+  padding-left: 0px;
+  list-style: none;
+}
+
+#FAQPage #faq .FAQ .mylist .questions {
+  list-style: none;
+  border-bottom: 1px solid #dddddd;
+}
+
+#FAQPage #faq .FAQ .mylist .questions .Quest {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#FAQPage #faq .FAQ .mylist .questions .Quest span {
+  font-size: 12px;
+}
+
+#FAQPage #faq .FAQ .mylist .questions .Quest h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #333e48;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+#FAQPage #faq .zerodeg {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: -webkit-transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, -webkit-transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+#FAQPage #faq .udeg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: -webkit-transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, -webkit-transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+#FAQPage #faq .answer p {
+  font-family: "Open Sans", sans-serif;
+  color: #848484;
+  font-size: 14px;
+}
+
 footer {
   background-color: white;
   display: -webkit-box;
@@ -8509,6 +8158,16 @@ footer .rightside .footerList .listItem .subList li a:hover {
   }
 }
 
+@media (min-width: 1200px) {
+  header .mega-menu-column-4 {
+    max-width: 950px !important;
+  }
+  header .categories .mega-menu-column-3 {
+    max-width: 900px !important;
+    min-width: 900px !important;
+  }
+}
+
 @media (max-width: 992px) {
   header .topheader {
     display: none;
@@ -8580,6 +8239,8 @@ footer .rightside .footerList .listItem .subList li a:hover {
     padding: 50px 20px 20px;
     overflow-y: auto;
     background-color: white;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     -webkit-transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -webkit-transform: translateX(-310px);
@@ -8777,6 +8438,12 @@ footer .rightside .footerList .listItem .subList li a:hover {
   }
   #detailspage .productdetails .left .imagewrapper {
     padding: 0 15px;
+  }
+  #FAQPage .Quest {
+    padding: 20px 0px !important;
+  }
+  #FAQPage .Quest h6 {
+    font-size: 23px !important;
   }
 }
 
