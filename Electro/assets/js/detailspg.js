@@ -57,7 +57,17 @@ $(document).ready(function () {
   });
 
   // ending product images slider
-  $(".breadcrumb").asBreadcrumbs({
-    namespace: "breadcrumb",
+
+  $("#detailspage .writeopenclose .opclsbtn").click(function () {
+    $("#detailspage .writingsection").toggleClass("activeRevWriting");
+  });
+
+  //star Rating
+  $(".overallstar .my-rating").starRating({
+    initialRating: 4,
+    strokeColor: "#894A00",
+    strokeWidth: 10,
+    starSize: 20,
+    readOnly: true,
   });
 });
