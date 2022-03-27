@@ -7251,6 +7251,333 @@ header {
     }
   }
 }
+#whishlistPage {
+  .desc {
+    h5 {
+      text-align: center;
+      font-family: $secondary-font;
+      font-size: 30px;
+      font-weight: 600;
+      color: $main-text-color;
+      margin: 30px 0px;
+    }
+    .sharing {
+      p {
+        margin: 10px 0px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $secondary-font;
+        color: $main-text-color;
+        font-weight: 600;
+      }
+      .sharelist {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        ul {
+          display: flex;
+          padding-left: 0px;
+          li {
+            margin-right: 20px;
+            list-style: none;
+            width: 38px;
+            height: 38px;
+            a {
+              border: 1px solid $secondary-border-color;
+              border-radius: 50%;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              &:hover {
+                svg {
+                  fill: white;
+                }
+              }
+              svg {
+                width: 18px;
+                height: 18px;
+              }
+            }
+            .fb {
+              &:hover {
+                background-color: #1260b4;
+              }
+            }
+            .pint {
+              &:hover {
+                background-color: #a30b0b;
+              }
+            }
+            .twit {
+              &:hover {
+                background-color: #3ba6d8;
+              }
+            }
+            .email {
+              &:hover {
+                background-color: #d6ad3d;
+              }
+            }
+            .link {
+              &:hover {
+                background-color: #81caba;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .wishList {
+    .wrapperWish {
+      padding: 0px;
+      .topList {
+        display: flex;
+        align-items: center;
+        background-color: rgb(240, 242, 245);
+        height: 40px;
+        span {
+          font-size: 18px;
+          color: rgb(136, 136, 184);
+          cursor: pointer;
+        }
+        .activeGrid {
+          color: rgb(16, 16, 122);
+        }
+        .grid {
+          margin: 0px 10px;
+        }
+      }
+      .listSettings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px 40px;
+        border-bottom: 1px solid $secondary-border-color;
+        .leftside {
+          display: flex;
+          align-items: center;
+          .opencloseList {
+            span {
+              cursor: pointer;
+            }
+          }
+          .listName {
+            display: flex;
+            align-items: center;
+            span {
+              font-size: 13px;
+              font-weight: 700;
+              font-family: $secondary-font;
+            }
+          }
+          .prodCount {
+            display: flex;
+            align-items: center;
+            color: $light-font-color;
+            font-size: 15px;
+          }
+          .setElem {
+            margin-right: 20px;
+          }
+        }
+        .rightside {
+          .wishMenu {
+            text-align: end;
+            font-size: 20px;
+            span {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .listItems {
+        .item {
+          margin-bottom: 15px;
+          min-height: 100px;
+          box-sizing: border-box;
+          flex-wrap: wrap;
+          .gridSecondMod {
+            display: block !important;
+            .itemImage {
+              width: 100% !important;
+            }
+            .itemInfo {
+              width: 100% !important;
+            }
+            .action {
+              width: 100% !important;
+            }
+          }
+          .item-wrapper {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: stretch;
+            position: relative;
+            border: 1px solid #f2f2f2;
+            margin-bottom: 10px;
+            border-radius: 4px;
+
+            .wlistItem {
+              display: flex;
+              flex-flow: column;
+              justify-content: center;
+              align-items: center;
+              padding: 15px;
+            }
+
+            .itemImage {
+              padding: 20px;
+              position: relative;
+              padding-inline-start: 25px;
+              display: flex;
+              flex-flow: column;
+              justify-content: center;
+              align-items: center;
+              .thumbnail {
+                position: static;
+                display: block;
+                img {
+                  width: 100%;
+                  max-width: 200px;
+                  height: auto;
+                  border: none;
+                  vertical-align: middle;
+                  transform: translateZ(0);
+                }
+                .remove {
+                  top: 50%;
+                  left: 10px;
+                  transform: translateY(-50%);
+                  position: absolute;
+                  z-index: 10;
+                  span {
+                    font-size: 25px;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+            .itemInfo {
+              display: flex;
+              flex-flow: column;
+              justify-content: center;
+              align-items: center;
+              padding: 15px;
+              .productName {
+                a {
+                  text-decoration: none;
+                  font-family: $main-font;
+                  color: $products-name-color;
+                  font-weight: 600;
+                  transition: 0.225s ease-in-out;
+                  &:hover {
+                    color: $main-color;
+                  }
+                }
+              }
+            }
+            .action {
+              display: flex;
+              flex-flow: column;
+              justify-content: center;
+              align-items: center;
+              padding: 15px;
+              border-left: 1px solid #f2f2f2;
+              text-align: center;
+              .price {
+                color: $main-text-color;
+                font-size: 22px;
+                font-weight: 500;
+              }
+              .addtoCart {
+                a {
+                  display: inline-block;
+                  text-decoration: none;
+                  font-family: $secondary-font;
+                  padding: 12px 30px;
+                  border-radius: 25px;
+                  font-size: 14px;
+                  font-weight: 700;
+                  color: $main-text-color;
+                  background-color: $main-color;
+                  transition: 0.225s;
+                  &:hover {
+                    background-color: $background-color-Dark;
+                    color: white;
+                  }
+                }
+              }
+              .quantity {
+                margin: 20px 0px;
+                width: 180px;
+                background: #f0f2f5;
+                padding: 0 15px;
+                border-radius: 25px;
+                position: relative;
+                display: inline-block;
+                text-align: center;
+                border: 1px solid $secondary-border-color;
+
+                //input arrowlari gizletmek
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
+                // -----------------
+                input {
+                  border: none;
+                  width: 100%;
+                  text-align: center;
+                  outline: none;
+                  background: #f0f2f5;
+                  padding: 8px 0px;
+                }
+                .qty-inner {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  height: 100%;
+                  width: 100%;
+                  button {
+                    border: none;
+                    outline: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #f0f2f5;
+                    svg {
+                      &:hover {
+                        fill: $main-color;
+                      }
+                    }
+                  }
+                  .qty-up {
+                    width: 25px;
+                    height: 25px;
+                    cursor: pointer;
+                    z-index: 2;
+                  }
+                  .qty-down {
+                    width: 25px;
+                    height: 25px;
+                    cursor: pointer;
+                    z-index: 2;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 footer {
   background-color: white;
   .leftside {
@@ -7518,6 +7845,13 @@ footer {
       .mega-menu-column-3 {
         max-width: 900px !important;
         min-width: 900px !important;
+      }
+    }
+  }
+  #whishlistPage {
+    .wishList {
+      .wrapperWish {
+        padding: 0px 80px !important;
       }
     }
   }
@@ -7926,6 +8260,24 @@ footer {
       overflow-y: hidden;
     }
   }
+  #whishlistPage {
+    .listItems {
+      .itemImage {
+        width: 50%;
+      }
+      .itemInfo {
+        width: 50%;
+      }
+      .action {
+        width: 100%;
+        border-top: 1px solid $secondary-border-color !important;
+        border-left: none !important;
+      }
+    }
+    .quantity {
+      width: 140px !important;
+    }
+  }
 }
 @media (min-width: 768px) {
   #shoppingCartPage {
@@ -7951,6 +8303,19 @@ footer {
       padding: 20px 0px !important;
       h6 {
         font-size: 23px !important;
+      }
+    }
+  }
+  #whishlistPage {
+    .listItems {
+      .itemImage {
+        width: 20%;
+      }
+      .itemInfo {
+        width: 50%;
+      }
+      .action {
+        width: 30%;
       }
     }
   }

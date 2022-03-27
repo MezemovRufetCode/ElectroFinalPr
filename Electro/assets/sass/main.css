@@ -8827,6 +8827,444 @@ header .activeShoppingcart {
   vertical-align: top;
 }
 
+#whishlistPage .desc h5 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #333e48;
+  margin: 30px 0px;
+}
+
+#whishlistPage .desc .sharing p {
+  margin: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  color: #333e48;
+  font-weight: 600;
+}
+
+#whishlistPage .desc .sharing .sharelist {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#whishlistPage .desc .sharing .sharelist ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0px;
+}
+
+#whishlistPage .desc .sharing .sharelist ul li {
+  margin-right: 20px;
+  list-style: none;
+  width: 38px;
+  height: 38px;
+}
+
+#whishlistPage .desc .sharing .sharelist ul li a {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#whishlistPage .desc .sharing .sharelist ul li a:hover svg {
+  fill: white;
+}
+
+#whishlistPage .desc .sharing .sharelist ul li a svg {
+  width: 18px;
+  height: 18px;
+}
+
+#whishlistPage .desc .sharing .sharelist ul li .fb:hover {
+  background-color: #1260b4;
+}
+
+#whishlistPage .desc .sharing .sharelist ul li .pint:hover {
+  background-color: #a30b0b;
+}
+
+#whishlistPage .desc .sharing .sharelist ul li .twit:hover {
+  background-color: #3ba6d8;
+}
+
+#whishlistPage .desc .sharing .sharelist ul li .email:hover {
+  background-color: #d6ad3d;
+}
+
+#whishlistPage .desc .sharing .sharelist ul li .link:hover {
+  background-color: #81caba;
+}
+
+#whishlistPage .wishList .wrapperWish {
+  padding: 0px;
+}
+
+#whishlistPage .wishList .wrapperWish .topList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f0f2f5;
+  height: 40px;
+}
+
+#whishlistPage .wishList .wrapperWish .topList span {
+  font-size: 18px;
+  color: #8888b8;
+  cursor: pointer;
+}
+
+#whishlistPage .wishList .wrapperWish .topList .activeGrid {
+  color: #10107a;
+}
+
+#whishlistPage .wishList .wrapperWish .topList .grid {
+  margin: 0px 10px;
+}
+
+#whishlistPage .wishList .wrapperWish .listSettings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0px 40px;
+  border-bottom: 1px solid #dddddd;
+}
+
+#whishlistPage .wishList .wrapperWish .listSettings .leftside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#whishlistPage .wishList .wrapperWish .listSettings .leftside .opencloseList span {
+  cursor: pointer;
+}
+
+#whishlistPage .wishList .wrapperWish .listSettings .leftside .listName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#whishlistPage .wishList .wrapperWish .listSettings .leftside .listName span {
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+#whishlistPage .wishList .wrapperWish .listSettings .leftside .prodCount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #848484;
+  font-size: 15px;
+}
+
+#whishlistPage .wishList .wrapperWish .listSettings .leftside .setElem {
+  margin-right: 20px;
+}
+
+#whishlistPage .wishList .wrapperWish .listSettings .rightside .wishMenu {
+  text-align: end;
+  font-size: 20px;
+}
+
+#whishlistPage .wishList .wrapperWish .listSettings .rightside .wishMenu span {
+  cursor: pointer;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item {
+  margin-bottom: 15px;
+  min-height: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .gridSecondMod {
+  display: block !important;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .gridSecondMod .itemImage {
+  width: 100% !important;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .gridSecondMod .itemInfo {
+  width: 100% !important;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .gridSecondMod .action {
+  width: 100% !important;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  position: relative;
+  border: 1px solid #f2f2f2;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .wlistItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .itemImage {
+  padding: 20px;
+  position: relative;
+  -webkit-padding-start: 25px;
+          padding-inline-start: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .itemImage .thumbnail {
+  position: static;
+  display: block;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .itemImage .thumbnail img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border: none;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .itemImage .thumbnail .remove {
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  z-index: 10;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .itemImage .thumbnail .remove span {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .itemInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .itemInfo .productName a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #0062bd;
+  font-weight: 600;
+  -webkit-transition: 0.225s ease-in-out;
+  transition: 0.225s ease-in-out;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .itemInfo .productName a:hover {
+  color: #fed700;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  border-left: 1px solid #f2f2f2;
+  text-align: center;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .action .price {
+  color: #333e48;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .action .addtoCart a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333e48;
+  background-color: #fed700;
+  -webkit-transition: 0.225s;
+  transition: 0.225s;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .action .addtoCart a:hover {
+  background-color: #333e48;
+  color: white;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .action .quantity {
+  margin: 20px 0px;
+  width: 180px;
+  background: #f0f2f5;
+  padding: 0 15px;
+  border-radius: 25px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .action .quantity input::-webkit-outer-spin-button,
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .action .quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .action .quantity input {
+  border: none;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  background: #f0f2f5;
+  padding: 8px 0px;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .action .quantity .qty-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .action .quantity .qty-inner button {
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f0f2f5;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .action .quantity .qty-inner button svg:hover {
+  fill: #fed700;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .action .quantity .qty-inner .qty-up {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#whishlistPage .wishList .wrapperWish .listItems .item .item-wrapper .action .quantity .qty-inner .qty-down {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 2;
+}
+
 footer {
   background-color: white;
 }
@@ -9106,6 +9544,9 @@ footer .footerbottom p {
   header .categories .mega-menu-column-3 {
     max-width: 900px !important;
     min-width: 900px !important;
+  }
+  #whishlistPage .wishList .wrapperWish {
+    padding: 0px 80px !important;
   }
 }
 
@@ -9397,6 +9838,20 @@ footer .footerbottom p {
     overflow-x: auto;
     overflow-y: hidden;
   }
+  #whishlistPage .listItems .itemImage {
+    width: 50%;
+  }
+  #whishlistPage .listItems .itemInfo {
+    width: 50%;
+  }
+  #whishlistPage .listItems .action {
+    width: 100%;
+    border-top: 1px solid #dddddd !important;
+    border-left: none !important;
+  }
+  #whishlistPage .quantity {
+    width: 140px !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -9411,6 +9866,15 @@ footer .footerbottom p {
   }
   #FAQPage .Quest h6 {
     font-size: 23px !important;
+  }
+  #whishlistPage .listItems .itemImage {
+    width: 20%;
+  }
+  #whishlistPage .listItems .itemInfo {
+    width: 50%;
+  }
+  #whishlistPage .listItems .action {
+    width: 30%;
   }
 }
 
