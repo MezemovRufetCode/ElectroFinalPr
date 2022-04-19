@@ -505,4 +505,88 @@ $(document).ready(function () {
     // Displaying the hierarchical order of pages.
     $(".display").html($select.prepend('<a href="#syllabus">Home</a>'));
   });
+
+  $(document).ready(function () {
+    $(".quickVContent .owl-carousel").owlCarousel({
+      items: 1,
+      nav: true,
+      loop: true,
+      navText: [
+        "<i class='fa-solid fa-chevron-left'></i>",
+        "<i class='fa-solid fa-chevron-right'></i>",
+      ],
+      dots: false,
+    });
+  });
+
+  $(document).ready(function () {
+    //quantity3
+    var valueCount;
+    document
+      .querySelector(".quantity3 .qty-down3")
+      .setAttribute("disabled", "disabled");
+    document
+      .querySelector(".quantity3 .qty-up3")
+      .addEventListener("click", function () {
+        valueCount = document.getElementById("quantity3").value;
+        valueCount++;
+        document.getElementById("quantity3").value = valueCount;
+        if (valueCount > 1) {
+          document.querySelector(".qty-down3").removeAttribute("disabled");
+          document.querySelector(".qty-down3").classList.remove("disabled");
+        }
+      });
+    document.querySelector(".qty-down3").addEventListener("click", function () {
+      valueCount = document.getElementById("quantity3").value;
+      valueCount--;
+      document.getElementById("quantity3").value = valueCount;
+      if (valueCount == 1) {
+        document
+          .querySelector(".qty-down3")
+          .setAttribute("disabled", "disabled");
+      }
+    });
+  });
+  // Initialise Carousel
+  const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
+    Dots: false,
+  });
+
+  // Thumbnails
+  const thumbCarousel = new Carousel(document.querySelector("#thumbCarousel"), {
+    Sync: {
+      target: mainCarousel,
+      friction: 0,
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: false,
+  });
+
+  // Customize Fancybox
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    Carousel: {
+      on: {
+        change: (that) => {
+          mainCarousel.slideTo(mainCarousel.findPageForSlide(that.page), {
+            friction: 0,
+          });
+        },
+      },
+    },
+  });
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    Carousel: {
+      on: {
+        change: (that) => {
+          // Sync Carousel slide
+          mainCarousel.slideTo(mainCarousel.findPageForSlide(that.page), {
+            friction: 0,
+          });
+        },
+      },
+    },
+  });
 });
